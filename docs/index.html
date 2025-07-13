@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personajes - Papers, Please</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 1rem;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #444;
+    }
+    form {
+      margin-bottom: 1.5rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.4rem;
+      margin-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+    th, td {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 Buscar Personajes – Papers, Please</h1>
+
+  <form id="filtrosForm">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" />
+
+    <label for="nationality">Nacionalidad:</label>
+    <select id="nationality" name="nationality">
+      <option value="">-- Todas --</option>
+      <option value="Arstotzka">Arstotzka</option>
+      <option value="Obristan">Obristan</option>
+      <option value="Kolechia">Kolechia</option>
+      <option value="Republia">Republia</option>
+      <option value="Antegria">Antegria</option>
+      <option value="Impor">Impor</option>
+      <option value="United Federation">United Federation</option>
+    </select>
+
+    <label for="type">Tipo:</label>
+    <select id="type" name="type">
+      <option value="">-- Todos --</option>
+      <option value="civilian">Civilian</option>
+      <option value="guard">Guard</option>
+      <option value="agent">Agent</option>
+      <option value="official">Official</option>
+      <option value="military">Military</option>
+      <option value="spy">Spy</option>
+      <option value="criminal">Criminal</option>
+    </select>
+
+    <label for="roles">Roles (separados por coma):</label>
+    <input type="text" id="roles" name="roles" placeholder="ej. hero,guard" />
+
+    <button type="submit">Buscar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Nacionalidad</th>
+        <th>Tipo</th>
+        <th>Roles</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody id="tablaPersonajes">
+      <!-- Resultados dinámicos -->
+    </tbody>
+  </table>
+
+  <script>
+    const form = document.getElementById("filtrosForm");
+    const tbody = document.getElementById("tablaPersonajes");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const nationality = document.getElementById("nationality").value;
+      const type = document.getElementById("type").value;
+      const rolesInput = document.getElementById("roles").value.trim();
+
+      const params = new URLSearchParams();
+
+      if (name) params.append("name", name);
+      if (nationality) params.append("nationality", nationality);
+      if (type) params.append("type", type);
+      if (rolesInput) {
+        const roles = rolesInput.split(",").map(r => r.trim());
+        roles.forEach(role => params.append("roles", role));
+      }
+
+      try {
+        const res = await fetch(`http://localhost:3000/api/personajes?${params}`);
+        const personajes = await res.json();
+
+        tbody.innerHTML = "";
+
+        if (!Array.isArray(personajes) || personajes.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="5">No se encontraron personajes</td></tr>`;
+          return;
+        }
+
+        personajes.forEach(p => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${p.name}</td>
+            <td>${p.nationality}</td>
+            <td>${p.type}</td>
+            <td>${p.roles.join(", ")}</td>
+            <td>${p.notes}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+
+      } catch (err) {
+        console.error("Error al consumir la API", err);
+        tbody.innerHTML = `<tr><td colspan="5">Error al cargar datos</td></tr>`;
+      }
+    });
+
+    // Auto-cargar todos los personajes al iniciar
+    form.dispatchEvent(new Event("submit"));
+  </script>
+</body>
+</html>
