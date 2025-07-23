@@ -40,7 +40,7 @@ class Server {
   }
 
   private loadRoutes(): void {
-    this.app.use("/webshell", express.static(path.join(__dirname, "..", "public")));
+    this.app.use("/webshell", express.static(path.join(__dirname, "public")));
     this.app.use("/papersplease", PapersPleaseAPI);
     this.app.use("/minecraft", MinecraftAPI);
     this.app.use("/terminatorsalvation", TerminatorSalvationAPI);
