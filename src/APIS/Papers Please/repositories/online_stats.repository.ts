@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 class OnlineStatsRepositories {
   public async getGlobalSteamAchievements() {
     const gameId = 239030;
@@ -22,8 +20,7 @@ class OnlineStatsRepositories {
 
     try {
       const response = await fetch(url);
-      if (!response.ok)
-        throw new Error(`Error al obtener datos: ${response.status}`);
+      if (!response.ok) throw new Error(`Error al obtener datos: ${response.status}`);
       const steamData: any = await response.json();
 
       return steamData;
