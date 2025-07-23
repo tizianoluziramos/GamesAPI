@@ -47,11 +47,21 @@ class Server {
     this.app.use("/", index);
   }
 
-  public start(): void {
-    this.app.listen(this.port, () => {
+  public async start(): Promise<void> {
+    this.app.listen(this.port, async () => {
       console.log(`🚀 Servidor corriendo en puerto ${this.port}`);
+
+      const tunnel = await localtunnel({
+        port: Number(this.port),
+        subdomain: "gamesapi",
+      });
+
+      console.log(`🌐 Tu API está disponible públicamente en: ${tunnel.url}`);
+
+      tunnel.on("close", () => {
+        console.log("❌ Túnel cerrado");
+      });
     });
-    localtunnel({ port: 3000, subdomain: "gamesapi" });
   }
 }
 
