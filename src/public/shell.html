@@ -10,29 +10,6 @@
     <button onclick="runCommand()">Ejecutar</button>
     <pre id="output" style="background: #111; color: #0f0; padding: 10px; height: 300px; overflow: auto"></pre>
 
-    <script>
-      async function runCommand() {
-        const cmd = document.getElementById("cmd").value;
-        if (!cmd) return alert("Ingresá un comando");
-
-        const res = await fetch("/shell", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ command: cmd }),
-        });
-        const data = await res.json();
-
-        const output = document.getElementById("output");
-        if (data.error) {
-          output.textContent += `Error: ${data.error}\n`;
-        }
-        if (data.stdout) {
-          output.textContent += `${data.stdout}\n`;
-        }
-        if (data.stderr) {
-          output.textContent += `${data.stderr}\n`;
-        }
-      }
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
