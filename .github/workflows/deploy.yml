@@ -1,7 +1,7 @@
 name: Test Node API with TypeScript
 
 on:
-  workflow_dispatch: # te permite correrlo manualmente desde GitHub
+  workflow_dispatch:
   push:
     branches: [main]
 
@@ -19,7 +19,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci # usa package-lock.json para una instalación exacta
 
       - name: Run API with ts-node
         run: npx ts-node src/index.ts
