@@ -1,5 +1,3 @@
-import cluster from "cluster";
-import os from "os";
 import express, { Application } from "express";
 import PapersPleaseAPI from "./APIS/Papers Please/routes";
 import MinecraftAPI from "./APIS/Minecraft";
@@ -28,13 +26,6 @@ class Server {
   }
 
   private loadMiddlewares(): void {
-    this.app.set("trust proxy", true);
-    this.app.use((req: any, res: any, next) => {
-      if (req.subdomains.includes("api")) {
-        return next();
-      }
-      return res.status(403).json({ error: "Access only by API.*" });
-    });
     this.app.use(cors({ origin: "http://localhost:3000" }));
     this.app.use(express.json());
     this.app.use(compression());
@@ -56,27 +47,11 @@ class Server {
   }
 
   public start(): void {
-    if (cluster.worker && cluster.worker?.id === 1) {
-      this.app.listen(this.port, () => {
-        console.log(`🚀 Servidor corriendo en puerto ${this.port}`);
-      });
-    }
+    this.app.listen(this.port, () => {
+      console.log(`🚀 Servidor corriendo en puerto ${this.port}`);
+    });
   }
 }
 
-if (cluster.isPrimary) {
-  const numCPUs = os.cpus().length;
-  console.log(`🧠 Modo cluster activado: ${numCPUs} núcleos`);
-
-  for (let i = 0; i < numCPUs; i++) {
-    cluster.fork();
-  }
-
-  cluster.on("exit", (worker) => {
-    console.warn(`❌ Worker ${worker.process.pid} murió. Reiniciando...`);
-    cluster.fork();
-  });
-} else {
-  const server = new Server();
-  server.start();
-}
+const server = new Server();
+server.start();
