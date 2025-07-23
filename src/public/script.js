@@ -20,3 +20,8 @@ async function runCommand() {
     output.textContent += `${data.stderr}\n`;
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const runBtn = document.getElementById("runBtn");
+  runBtn.addEventListener("click", runCommand);
+});
