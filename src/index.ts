@@ -5,6 +5,7 @@ import TerminatorSalvationAPI from "./APIS/Terminator - Salvation/routes/index";
 import TheElderScrollsVSkyrim from "./APIS/The Elder Scrolls V Skyrim/";
 import "./config/.env.loader";
 import index from "./routes";
+import localtunnel from "localtunnel";
 
 // 🛡️ Middlewares
 import resetApiUsage from "./middlewares/api_key.middleware";
@@ -50,6 +51,7 @@ class Server {
     this.app.listen(this.port, () => {
       console.log(`🚀 Servidor corriendo en puerto ${this.port}`);
     });
+    localtunnel({ port: 3000, subdomain: "gamesapi" });
   }
 }
 
