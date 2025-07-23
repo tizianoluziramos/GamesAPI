@@ -1,0 +1,812 @@
+{
+  "spanish": [
+    {
+      "id": "1",
+      "name": "Jorji Costava",
+      "nationality": "Obristan",
+      "type": "civilian",
+      "roles": ["smuggler", "comic relief"],
+      "notes": "Visita frecuentemente con documentos falsos"
+    },
+    {
+      "id": "2",
+      "name": "Sergiu",
+      "nationality": "Arstotzka",
+      "type": "guard",
+      "roles": ["border guard", "hero"],
+      "notes": "Se sacrifica para detener a un atacante"
+    },
+    {
+      "id": "3",
+      "name": "Mikhail Saratov",
+      "nationality": "Arstotzka",
+      "type": "inspector",
+      "roles": ["MOA administrator"],
+      "notes": "Envía cartas con cambios de reglas"
+    },
+    {
+      "id": "4",
+      "name": "Elisa",
+      "nationality": "Unknown",
+      "type": "civilian",
+      "roles": ["refugee", "wife"],
+      "notes": "Mujer de un solicitante que implora que la dejes pasar"
+    },
+    {
+      "id": "5",
+      "name": "Corman Drex",
+      "nationality": "Arstotzka",
+      "type": "agent",
+      "roles": ["EZIC contact"],
+      "notes": "Entrega un manual de EZIC"
+    },
+    {
+      "id": "6",
+      "name": "Khaled Istom",
+      "nationality": "Kolechia",
+      "type": "terrorist",
+      "roles": ["assassin", "EZIC target"],
+      "notes": "Puede intentar un atentado"
+    },
+    {
+      "id": "7",
+      "name": "Georgi Popov",
+      "nationality": "United Federation",
+      "type": "agent",
+      "roles": ["EZIC target"],
+      "notes": "Debe ser eliminado por EZIC"
+    },
+    {
+      "id": "8",
+      "name": "EZIC Messenger",
+      "nationality": "Unknown",
+      "type": "agent",
+      "roles": ["messenger"],
+      "notes": "Entrega notas secretas de EZIC"
+    },
+    {
+      "id": "9",
+      "name": "The M.O.A. Inspector",
+      "nationality": "Arstotzka",
+      "type": "official",
+      "roles": ["auditor", "supervisor"],
+      "notes": "Revisa tu desempeño, puede hacerte arrestar"
+    },
+    {
+      "id": "10",
+      "name": "Calensk",
+      "nationality": "Arstotzka",
+      "type": "military",
+      "roles": ["guard supervisor"],
+      "notes": "Te pide colaborar para compartir propinas"
+    },
+    {
+      "id": "11",
+      "name": "Your Wife",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Vive contigo, puede enfermarse o morir"
+    },
+    {
+      "id": "12",
+      "name": "Your Son",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Vive contigo, puede morir si no lo cuidas"
+    },
+    {
+      "id": "13",
+      "name": "Your Mother-in-law",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Familia política"
+    },
+    {
+      "id": "14",
+      "name": "Your Uncle",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Parte de tu familia"
+    },
+    {
+      "id": "15",
+      "name": "Vince Lestrade",
+      "nationality": "Republia",
+      "type": "criminal",
+      "roles": ["wanted fugitive"],
+      "notes": "Criminal buscado, puede ser detenido"
+    },
+    {
+      "id": "16",
+      "name": "Isaac Kalfeld",
+      "nationality": "Kolechia",
+      "type": "criminal",
+      "roles": ["wanted fugitive"],
+      "notes": "Aparece en boletín de criminales"
+    },
+    {
+      "id": "17",
+      "name": "Old Man (Obristan’s ID mismatch)",
+      "nationality": "Obristan",
+      "type": "comic",
+      "roles": ["invalid ID"],
+      "notes": "Vuelve con documentos alterados"
+    },
+    {
+      "id": "18",
+      "name": "Mysterious Man (Blue Hood)",
+      "nationality": "Unknown",
+      "type": "EZIC agent",
+      "roles": ["bomb dropper"],
+      "notes": "Puede darte un paquete bomba"
+    },
+    {
+      "id": "19",
+      "name": "EZIC Contact - Quarantine Day",
+      "nationality": "Unknown",
+      "type": "EZIC agent",
+      "roles": ["surveillance"],
+      "notes": "Intenta pasar documentos en día de cuarentena"
+    },
+    {
+      "id": "20",
+      "name": "The Impostor Inspector",
+      "nationality": "Arstotzka",
+      "type": "spy",
+      "roles": ["fraud"],
+      "notes": "Finge ser tú para robar identidad"
+    }
+  ],
+  "english": [
+    {
+      "id": "1",
+      "name": "Jorji Costava",
+      "nationality": "Obristan",
+      "type": "civilian",
+      "roles": ["smuggler", "comic relief"],
+      "notes": "Frequently visits with forged documents"
+    },
+    {
+      "id": "2",
+      "name": "Sergiu",
+      "nationality": "Arstotzka",
+      "type": "guard",
+      "roles": ["border guard", "hero"],
+      "notes": "Sacrifices himself to stop an attacker"
+    },
+    {
+      "id": "3",
+      "name": "Mikhail Saratov",
+      "nationality": "Arstotzka",
+      "type": "inspector",
+      "roles": ["MOA administrator"],
+      "notes": "Sends letters with rule changes"
+    },
+    {
+      "id": "4",
+      "name": "Elisa",
+      "nationality": "Unknown",
+      "type": "civilian",
+      "roles": ["refugee", "wife"],
+      "notes": "Wife of an applicant begging you to let her pass"
+    },
+    {
+      "id": "5",
+      "name": "Corman Drex",
+      "nationality": "Arstotzka",
+      "type": "agent",
+      "roles": ["EZIC contact"],
+      "notes": "Delivers an EZIC manual"
+    },
+    {
+      "id": "6",
+      "name": "Khaled Istom",
+      "nationality": "Kolechia",
+      "type": "terrorist",
+      "roles": ["assassin", "EZIC target"],
+      "notes": "May attempt an attack"
+    },
+    {
+      "id": "7",
+      "name": "Georgi Popov",
+      "nationality": "United Federation",
+      "type": "agent",
+      "roles": ["EZIC target"],
+      "notes": "Must be eliminated by EZIC"
+    },
+    {
+      "id": "8",
+      "name": "EZIC Messenger",
+      "nationality": "Unknown",
+      "type": "agent",
+      "roles": ["messenger"],
+      "notes": "Delivers secret EZIC notes"
+    },
+    {
+      "id": "9",
+      "name": "The M.O.A. Inspector",
+      "nationality": "Arstotzka",
+      "type": "official",
+      "roles": ["auditor", "supervisor"],
+      "notes": "Reviews your performance, can have you arrested"
+    },
+    {
+      "id": "10",
+      "name": "Calensk",
+      "nationality": "Arstotzka",
+      "type": "military",
+      "roles": ["guard supervisor"],
+      "notes": "Asks you to cooperate in sharing bribes"
+    },
+    {
+      "id": "11",
+      "name": "Your Wife",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Lives with you, may get sick or die"
+    },
+    {
+      "id": "12",
+      "name": "Your Son",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Lives with you, may die if not cared for"
+    },
+    {
+      "id": "13",
+      "name": "Your Mother-in-law",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Political family member"
+    },
+    {
+      "id": "14",
+      "name": "Your Uncle",
+      "nationality": "Arstotzka",
+      "type": "family",
+      "roles": ["dependent"],
+      "notes": "Part of your family"
+    },
+    {
+      "id": "15",
+      "name": "Vince Lestrade",
+      "nationality": "Republia",
+      "type": "criminal",
+      "roles": ["wanted fugitive"],
+      "notes": "Wanted criminal, can be detained"
+    },
+    {
+      "id": "16",
+      "name": "Isaac Kalfeld",
+      "nationality": "Kolechia",
+      "type": "criminal",
+      "roles": ["wanted fugitive"],
+      "notes": "Appears in criminal bulletin"
+    },
+    {
+      "id": "17",
+      "name": "Old Man (Obristan’s ID mismatch)",
+      "nationality": "Obristan",
+      "type": "comic",
+      "roles": ["invalid ID"],
+      "notes": "Comes back with altered documents"
+    },
+    {
+      "id": "18",
+      "name": "Mysterious Man (Blue Hood)",
+      "nationality": "Unknown",
+      "type": "EZIC agent",
+      "roles": ["bomb dropper"],
+      "notes": "May give you a bomb package"
+    },
+    {
+      "id": "19",
+      "name": "EZIC Contact - Quarantine Day",
+      "nationality": "Unknown",
+      "type": "EZIC agent",
+      "roles": ["surveillance"],
+      "notes": "Attempts to pass documents on quarantine day"
+    },
+    {
+      "id": "20",
+      "name": "The Impostor Inspector",
+      "nationality": "Arstotzka",
+      "type": "spy",
+      "roles": ["fraud"],
+      "notes": "Pretends to be you to steal identity"
+    }
+  ],
+  "portuguese": [
+    {
+      "id": "1",
+      "name": "Jorji Costava",
+      "nationality": "Obristan",
+      "type": "civil",
+      "roles": ["contrabandista", "alívio cômico"],
+      "notes": "Visita frequentemente com documentos falsos"
+    },
+    {
+      "id": "2",
+      "name": "Sergiu",
+      "nationality": "Arstotzka",
+      "type": "guarda",
+      "roles": ["guarda de fronteira", "herói"],
+      "notes": "Se sacrifica para deter um atacante"
+    },
+    {
+      "id": "3",
+      "name": "Mikhail Saratov",
+      "nationality": "Arstotzka",
+      "type": "inspetor",
+      "roles": ["administrador do MOA"],
+      "notes": "Envia cartas com mudanças nas regras"
+    },
+    {
+      "id": "4",
+      "name": "Elisa",
+      "nationality": "Desconhecido",
+      "type": "civil",
+      "roles": ["refugiada", "esposa"],
+      "notes": "Esposa de um requerente que implora para você deixar passar"
+    },
+    {
+      "id": "5",
+      "name": "Corman Drex",
+      "nationality": "Arstotzka",
+      "type": "agente",
+      "roles": ["contato EZIC"],
+      "notes": "Entrega um manual da EZIC"
+    },
+    {
+      "id": "6",
+      "name": "Khaled Istom",
+      "nationality": "Kolechia",
+      "type": "terrorista",
+      "roles": ["assassino", "alvo da EZIC"],
+      "notes": "Pode tentar um atentado"
+    },
+    {
+      "id": "7",
+      "name": "Georgi Popov",
+      "nationality": "Federação Unida",
+      "type": "agente",
+      "roles": ["alvo da EZIC"],
+      "notes": "Deve ser eliminado pela EZIC"
+    },
+    {
+      "id": "8",
+      "name": "Mensageiro EZIC",
+      "nationality": "Desconhecido",
+      "type": "agente",
+      "roles": ["mensageiro"],
+      "notes": "Entrega notas secretas da EZIC"
+    },
+    {
+      "id": "9",
+      "name": "Inspetor M.O.A.",
+      "nationality": "Arstotzka",
+      "type": "oficial",
+      "roles": ["auditor", "supervisor"],
+      "notes": "Avalia seu desempenho, pode mandar prendê-lo"
+    },
+    {
+      "id": "10",
+      "name": "Calensk",
+      "nationality": "Arstotzka",
+      "type": "militar",
+      "roles": ["supervisor da guarda"],
+      "notes": "Pede para você colaborar para compartilhar propinas"
+    },
+    {
+      "id": "11",
+      "name": "Sua Esposa",
+      "nationality": "Arstotzka",
+      "type": "família",
+      "roles": ["dependente"],
+      "notes": "Mora com você, pode adoecer ou morrer"
+    },
+    {
+      "id": "12",
+      "name": "Seu Filho",
+      "nationality": "Arstotzka",
+      "type": "família",
+      "roles": ["dependente"],
+      "notes": "Mora com você, pode morrer se não for cuidado"
+    },
+    {
+      "id": "13",
+      "name": "Sua Sogra",
+      "nationality": "Arstotzka",
+      "type": "família",
+      "roles": ["dependente"],
+      "notes": "Família política"
+    },
+    {
+      "id": "14",
+      "name": "Seu Tio",
+      "nationality": "Arstotzka",
+      "type": "família",
+      "roles": ["dependente"],
+      "notes": "Parte da sua família"
+    },
+    {
+      "id": "15",
+      "name": "Vince Lestrade",
+      "nationality": "Republia",
+      "type": "criminoso",
+      "roles": ["fugitivo procurado"],
+      "notes": "Criminoso procurado, pode ser detido"
+    },
+    {
+      "id": "16",
+      "name": "Isaac Kalfeld",
+      "nationality": "Kolechia",
+      "type": "criminoso",
+      "roles": ["fugitivo procurado"],
+      "notes": "Aparece no boletim de criminosos"
+    },
+    {
+      "id": "17",
+      "name": "Velho (ID incompatível de Obristan)",
+      "nationality": "Obristan",
+      "type": "cômico",
+      "roles": ["ID inválido"],
+      "notes": "Volta com documentos alterados"
+    },
+    {
+      "id": "18",
+      "name": "Homem Misterioso (Capuz Azul)",
+      "nationality": "Desconhecido",
+      "type": "agente EZIC",
+      "roles": ["lancador de bombas"],
+      "notes": "Pode te entregar um pacote bomba"
+    },
+    {
+      "id": "19",
+      "name": "Contato EZIC - Dia da Quarentena",
+      "nationality": "Desconhecido",
+      "type": "agente EZIC",
+      "roles": ["vigilância"],
+      "notes": "Tenta passar documentos no dia da quarentena"
+    },
+    {
+      "id": "20",
+      "name": "Inspetor Impostor",
+      "nationality": "Arstotzka",
+      "type": "espião",
+      "roles": ["fraude"],
+      "notes": "Finge ser você para roubar sua identidade"
+    }
+  ],
+  "japanese": [
+    {
+      "id": "1",
+      "name": "ジョルジ・コスタヴァ",
+      "nationality": "オブリスタン",
+      "type": "市民",
+      "roles": ["密輸業者", "コミックリリーフ"],
+      "notes": "偽造書類で頻繁に訪れる"
+    },
+    {
+      "id": "2",
+      "name": "セルジウ",
+      "nationality": "アルストツカ",
+      "type": "警備員",
+      "roles": ["国境警備隊", "英雄"],
+      "notes": "襲撃者を止めるために自らを犠牲にする"
+    },
+    {
+      "id": "3",
+      "name": "ミハイル・サラトフ",
+      "nationality": "アルストツカ",
+      "type": "検査官",
+      "roles": ["MOA管理者"],
+      "notes": "規則変更の手紙を送る"
+    },
+    {
+      "id": "4",
+      "name": "エリサ",
+      "nationality": "不明",
+      "type": "市民",
+      "roles": ["難民", "妻"],
+      "notes": "入国申請者の妻で通過を懇願する"
+    },
+    {
+      "id": "5",
+      "name": "コーマン・ドレックス",
+      "nationality": "アルストツカ",
+      "type": "エージェント",
+      "roles": ["EZIC連絡員"],
+      "notes": "EZICのマニュアルを渡す"
+    },
+    {
+      "id": "6",
+      "name": "カーレド・イストム",
+      "nationality": "コレキア",
+      "type": "テロリスト",
+      "roles": ["暗殺者", "EZIC標的"],
+      "notes": "テロ攻撃を試みる可能性がある"
+    },
+    {
+      "id": "7",
+      "name": "ゲオルギ・ポポフ",
+      "nationality": "連合共和国",
+      "type": "エージェント",
+      "roles": ["EZIC標的"],
+      "notes": "EZICによって排除されるべき"
+    },
+    {
+      "id": "8",
+      "name": "EZICの使者",
+      "nationality": "不明",
+      "type": "エージェント",
+      "roles": ["使者"],
+      "notes": "EZICの秘密のメモを届ける"
+    },
+    {
+      "id": "9",
+      "name": "M.O.A.検査官",
+      "nationality": "アルストツカ",
+      "type": "公務員",
+      "roles": ["監査人", "監督者"],
+      "notes": "あなたの業績を評価し、逮捕させることがある"
+    },
+    {
+      "id": "10",
+      "name": "カレンスク",
+      "nationality": "アルストツカ",
+      "type": "軍人",
+      "roles": ["警備監督官"],
+      "notes": "チップを分け合うための協力を求める"
+    },
+    {
+      "id": "11",
+      "name": "あなたの妻",
+      "nationality": "アルストツカ",
+      "type": "家族",
+      "roles": ["扶養家族"],
+      "notes": "一緒に暮らし、病気になったり死んだりすることがある"
+    },
+    {
+      "id": "12",
+      "name": "あなたの息子",
+      "nationality": "アルストツカ",
+      "type": "家族",
+      "roles": ["扶養家族"],
+      "notes": "一緒に暮らし、ケアしなければ死ぬことがある"
+    },
+    {
+      "id": "13",
+      "name": "あなたの義母",
+      "nationality": "アルストツカ",
+      "type": "家族",
+      "roles": ["扶養家族"],
+      "notes": "義理の家族"
+    },
+    {
+      "id": "14",
+      "name": "あなたの叔父",
+      "nationality": "アルストツカ",
+      "type": "家族",
+      "roles": ["扶養家族"],
+      "notes": "あなたの家族の一員"
+    },
+    {
+      "id": "15",
+      "name": "ヴィンス・レストレード",
+      "nationality": "リパブリア",
+      "type": "犯罪者",
+      "roles": ["指名手配犯"],
+      "notes": "指名手配されており、逮捕される可能性がある"
+    },
+    {
+      "id": "16",
+      "name": "アイザック・カルフェルド",
+      "nationality": "コレキア",
+      "type": "犯罪者",
+      "roles": ["指名手配犯"],
+      "notes": "犯罪者リストに載っている"
+    },
+    {
+      "id": "17",
+      "name": "老人（オブリスタンのID不一致）",
+      "nationality": "オブリスタン",
+      "type": "コメディ",
+      "roles": ["無効なID"],
+      "notes": "改ざんされた書類で戻ってくる"
+    },
+    {
+      "id": "18",
+      "name": "謎の男（青いフード）",
+      "nationality": "不明",
+      "type": "EZICエージェント",
+      "roles": ["爆弾投下者"],
+      "notes": "爆弾パッケージを渡すことがある"
+    },
+    {
+      "id": "19",
+      "name": "EZIC連絡員 - 隔離日",
+      "nationality": "不明",
+      "type": "EZICエージェント",
+      "roles": ["監視"],
+      "notes": "隔離日に書類を通そうとする"
+    },
+    {
+      "id": "20",
+      "name": "偽検査官",
+      "nationality": "アルストツカ",
+      "type": "スパイ",
+      "roles": ["詐欺"],
+      "notes": "あなたになりすまして身分を盗もうとする"
+    }
+  ],
+  "russian": [
+    {
+      "id": "1",
+      "name": "Йорджи Костава",
+      "nationality": "Обристан",
+      "type": "гражданский",
+      "roles": ["контрабандист", "комический персонаж"],
+      "notes": "Часто посещает с поддельными документами"
+    },
+    {
+      "id": "2",
+      "name": "Серджу",
+      "nationality": "Арстоцка",
+      "type": "охранник",
+      "roles": ["пограничник", "герой"],
+      "notes": "Жертвует собой, чтобы остановить нападающего"
+    },
+    {
+      "id": "3",
+      "name": "Михаил Саратов",
+      "nationality": "Арстоцка",
+      "type": "инспектор",
+      "roles": ["администратор МОА"],
+      "notes": "Отправляет письма с изменениями правил"
+    },
+    {
+      "id": "4",
+      "name": "Элиса",
+      "nationality": "Неизвестно",
+      "type": "гражданский",
+      "roles": ["беженка", "жена"],
+      "notes": "Жена заявителя, умоляющая пустить её"
+    },
+    {
+      "id": "5",
+      "name": "Корман Дрекс",
+      "nationality": "Арстоцка",
+      "type": "агент",
+      "roles": ["контакт EZIC"],
+      "notes": "Передаёт руководство EZIC"
+    },
+    {
+      "id": "6",
+      "name": "Халед Истом",
+      "nationality": "Колехия",
+      "type": "террорист",
+      "roles": ["ассасин", "цель EZIC"],
+      "notes": "Может попытаться совершить покушение"
+    },
+    {
+      "id": "7",
+      "name": "Георги Попов",
+      "nationality": "Объединённая Федерация",
+      "type": "агент",
+      "roles": ["цель EZIC"],
+      "notes": "Должен быть устранён EZIC"
+    },
+    {
+      "id": "8",
+      "name": "Посланник EZIC",
+      "nationality": "Неизвестно",
+      "type": "агент",
+      "roles": ["посланник"],
+      "notes": "Доставляет секретные заметки EZIC"
+    },
+    {
+      "id": "9",
+      "name": "Инспектор МОА",
+      "nationality": "Арстоцка",
+      "type": "чиновник",
+      "roles": ["аудитор", "надзиратель"],
+      "notes": "Оценивает твою работу, может арестовать"
+    },
+    {
+      "id": "10",
+      "name": "Каленск",
+      "nationality": "Арстоцка",
+      "type": "военный",
+      "roles": ["начальник охраны"],
+      "notes": "Просит сотрудничать для деления взяток"
+    },
+    {
+      "id": "11",
+      "name": "Твоя жена",
+      "nationality": "Арстоцка",
+      "type": "семья",
+      "roles": ["иждивенец"],
+      "notes": "Живёт с тобой, может заболеть или умереть"
+    },
+    {
+      "id": "12",
+      "name": "Твой сын",
+      "nationality": "Арстоцка",
+      "type": "семья",
+      "roles": ["иждивенец"],
+      "notes": "Живёт с тобой, может умереть, если не ухаживать"
+    },
+    {
+      "id": "13",
+      "name": "Твоя тёща",
+      "nationality": "Арстоцка",
+      "type": "семья",
+      "roles": ["иждивенец"],
+      "notes": "Родственница по закону"
+    },
+    {
+      "id": "14",
+      "name": "Твой дядя",
+      "nationality": "Арстоцка",
+      "type": "семья",
+      "roles": ["иждивенец"],
+      "notes": "Часть твоей семьи"
+    },
+    {
+      "id": "15",
+      "name": "Винс Лестрейд",
+      "nationality": "Републиа",
+      "type": "преступник",
+      "roles": ["разыскиваемый беглец"],
+      "notes": "Преступник в розыске, может быть задержан"
+    },
+    {
+      "id": "16",
+      "name": "Айзек Калфельд",
+      "nationality": "Колехия",
+      "type": "преступник",
+      "roles": ["разыскиваемый беглец"],
+      "notes": "Появляется в списках преступников"
+    },
+    {
+      "id": "17",
+      "name": "Старик (несоответствие ID Обристана)",
+      "nationality": "Обристан",
+      "type": "комический персонаж",
+      "roles": ["недействительный ID"],
+      "notes": "Возвращается с поддельными документами"
+    },
+    {
+      "id": "18",
+      "name": "Таинственный человек (синий капюшон)",
+      "nationality": "Неизвестно",
+      "type": "агент EZIC",
+      "roles": ["бомбист"],
+      "notes": "Может дать тебе бомбу в посылке"
+    },
+    {
+      "id": "19",
+      "name": "Контакт EZIC — день карантина",
+      "nationality": "Неизвестно",
+      "type": "агент EZIC",
+      "roles": ["наблюдение"],
+      "notes": "Пытается провести документы в карантинный день"
+    },
+    {
+      "id": "20",
+      "name": "Лживая инспектор",
+      "nationality": "Арстоцка",
+      "type": "шпион",
+      "roles": ["мошенник"],
+      "notes": "Выдаёт себя за тебя, чтобы украсть личность"
+    }
+  ]
+}

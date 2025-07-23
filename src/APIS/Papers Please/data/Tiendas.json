@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Steam",
+    "url": "https://store.steampowered.com/app/239030/Papers_Please/",
+    "price": 9.99,
+    "id": 1
+  },
+  {
+    "name": "GOG",
+    "url": "https://www.gog.com/en/game/papers_please",
+    "price": 3.46,
+    "id": 2
+  },
+  {
+    "name": "Humble Bundle",
+    "url": "https://humblebundle.com/store/papers-please",
+    "price": 9.99,
+    "id": 3
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "key": "d3f9a1e7b8c24f56a9d0e1f234567890abcdef1234567890fedcba0987654321",
+    "allowedRoutes": [
+      "/*"
+    ]
+  },
+  {
+    "key": "public-b7e3f1d29a6c4e8f9b1230d4a5c6789f0e1d2b3c4f5a6789e0d1c2b3a4f5e6d7",
+    "allowedRoutes": [
+      "/api/*",
+      "/public/*"
+    ],
+    "publicUsageLimit": 10000,
+    "currentUsage": 58
+  }
+]

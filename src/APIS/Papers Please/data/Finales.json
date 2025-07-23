@@ -1,0 +1,184 @@
+{
+  "spanish": [
+    {
+      "id": "continuar-como-inspector",
+      "titulo": "Año nuevo, mismos documentos",
+      "descripcion": "El inspector mantiene su trabajo tras sobrevivir a los eventos del año.",
+      "condiciones": [
+        "Aprobar inspección final",
+        "No colaborar con EZIC",
+        "No ser arrestado"
+      ],
+      "consecuencias": [
+        "Continúa trabajando en el punto de control",
+        "Familia segura"
+      ],
+      "tipo": "neutral",
+      "dia": 31
+    },
+    {
+      "id": "ezic-gana",
+      "titulo": "Nuevo orden instaurado",
+      "descripcion": "EZIC toma el control de Arstotzka con la ayuda del inspector.",
+      "condiciones": [
+        "Ayudar a EZIC en al menos 4 eventos",
+        "No ser arrestado",
+        "No ayudar al gobierno"
+      ],
+      "consecuencias": [
+        "EZIC derroca al gobierno",
+        "El inspector obtiene un puesto privilegiado"
+      ],
+      "tipo": "bueno",
+      "dia": 31,
+      "ezic": true
+    },
+    {
+      "id": "fuga-con-familia",
+      "titulo": "Fuga con la familia",
+      "descripcion": "El inspector escapa con su familia a Obristan usando dinero de sobornos.",
+      "condiciones": [
+        "Reunir 1000 créditos",
+        "Pagar al guardia",
+        "No estar bajo investigación",
+        "Familia viva"
+      ],
+      "consecuencias": [
+        "El inspector y su familia viven en exilio",
+        "Se evita el conflicto con EZIC"
+      ],
+      "tipo": "bueno",
+      "dia": 29
+    },
+    {
+      "id": "fuga-solo",
+      "titulo": "Fuga en solitario",
+      "descripcion": "El inspector huye solo, abandonando a su familia.",
+      "condiciones": [
+        "Reunir 1000 créditos",
+        "Pagar al guardia",
+        "Familia muerta o desatendida"
+      ],
+      "consecuencias": [
+        "Inspector vive en exilio solo",
+        "Familia desaparecida o muerta"
+      ],
+      "tipo": "neutral",
+      "dia": 29
+    },
+    {
+      "id": "arresto-por-multas",
+      "titulo": "Arrestado por deudas",
+      "descripcion": "El inspector es arrestado por acumulación de multas.",
+      "condiciones": [
+        "Demasiadas penalizaciones",
+        "No pagar renta",
+        "Negligencia repetida"
+      ],
+      "consecuencias": ["Arresto inmediato", "Fin del juego"],
+      "tipo": "malo"
+    },
+    {
+      "id": "arrestado-por-colaborar-con-ezic",
+      "titulo": "Arrestado por colaborar con EZIC",
+      "descripcion": "El inspector es descubierto ayudando a EZIC.",
+      "condiciones": [
+        "Colaborar con EZIC",
+        "Ser investigado",
+        "Fracasar en ocultarlo"
+      ],
+      "consecuencias": ["Es arrestado por traición"],
+      "tipo": "malo",
+      "ezic": true
+    },
+    {
+      "id": "arrestado-por-negligencia",
+      "titulo": "Arrestado por negligencia",
+      "descripcion": "El inspector es arrestado por ignorar reglas esenciales.",
+      "condiciones": [
+        "Permitir entrada de terroristas",
+        "Errores graves",
+        "Ignorar múltiples reglas"
+      ],
+      "consecuencias": ["Arresto inmediato"],
+      "tipo": "malo"
+    },
+    {
+      "id": "arrestado-por-asesinato",
+      "titulo": "Arrestado por asesinato",
+      "descripcion": "El inspector mata a un civil sin justificación.",
+      "condiciones": ["Disparar a un inocente", "Usar fuerza letal sin razón"],
+      "consecuencias": ["Juicio y encarcelamiento"],
+      "tipo": "malo"
+    },
+    {
+      "id": "arrestado-por-soborno",
+      "titulo": "Arrestado por aceptar sobornos",
+      "descripcion": "El inspector acepta demasiados sobornos y es descubierto.",
+      "condiciones": [
+        "Aceptar múltiples sobornos",
+        "Ser investigado por el M.O.A."
+      ],
+      "consecuencias": ["Arresto por corrupción"],
+      "tipo": "malo"
+    },
+    {
+      "id": "ejecutado-por-ezic",
+      "titulo": "Ejecutado por EZIC",
+      "descripcion": "EZIC elimina al inspector tras fallar en su misión.",
+      "condiciones": [
+        "Colaborar parcialmente con EZIC",
+        "No cumplir objetivos clave"
+      ],
+      "consecuencias": ["Ejecutado por EZIC", "Considerado traidor"],
+      "tipo": "malo",
+      "ezic": true
+    },
+    {
+      "id": "ejecutado-por-el-estado",
+      "titulo": "Ejecutado por el estado",
+      "descripcion": "El inspector es ejecutado públicamente por traición.",
+      "condiciones": ["Colaborar con EZIC", "Ser descubierto"],
+      "consecuencias": ["Ejecutado públicamente", "Familia desaparecida"],
+      "tipo": "malo",
+      "ezic": true
+    },
+    {
+      "id": "despedido-por-incompetencia",
+      "titulo": "Despedido por incompetencia",
+      "descripcion": "El inspector es removido de su cargo por bajo rendimiento.",
+      "condiciones": ["Errores constantes", "No seguir reglas básicas"],
+      "consecuencias": ["Pierde su trabajo", "No puede mantener a su familia"],
+      "tipo": "malo"
+    },
+    {
+      "id": "muere-la-familia",
+      "titulo": "Muerte de la familia",
+      "descripcion": "La familia del inspector muere por falta de recursos.",
+      "condiciones": [
+        "No pagar comida",
+        "No pagar calefacción",
+        "No comprar medicina"
+      ],
+      "consecuencias": ["Muerte de todos los miembros familiares"],
+      "tipo": "malo"
+    },
+    {
+      "id": "muere-el-inspector",
+      "titulo": "Muerte del inspector",
+      "descripcion": "El inspector muere en un ataque o ejecución.",
+      "condiciones": ["No responder a un ataque", "Ser objetivo de represalia"],
+      "consecuencias": ["Juego terminado", "Familia sin apoyo"],
+      "tipo": "malo"
+    },
+    {
+      "id": "destituido-por-ezic",
+      "titulo": "EZIC te reemplaza",
+      "descripcion": "EZIC decide que el inspector es inútil y lo reemplaza.",
+      "condiciones": ["Colaborar parcialmente", "Fracasar en momentos clave"],
+      "consecuencias": ["Inspector desaparece", "EZIC continúa su plan"],
+      "tipo": "malo",
+      "ezic": true
+    }
+  ]
+}

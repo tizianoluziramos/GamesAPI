@@ -1,0 +1,256 @@
+{
+  "spanish": {
+    "mecanicas": {
+      "documentos": [
+        {
+          "tipo": "pasaporte",
+          "campos": [
+            "nombre",
+            "fecha_nacimiento",
+            "sexo",
+            "nacionalidad",
+            "numero_pasaporte",
+            "fecha_expiracion",
+            "fecha_emision",
+            "foto",
+            "ciudad_emision",
+            "sello"
+          ],
+          "validaciones": [
+            "fecha_expiracion > fecha_actual",
+            "fecha_nacimiento < fecha_actual - 18 años (o según reglas del juego)",
+            "formato_numero_pasaporte correcto",
+            "sello presente y válido",
+            "ciudad_emision válida para la nacionalidad"
+          ]
+        },
+        {
+          "tipo": "permiso_entrada",
+          "campos": [
+            "nombre",
+            "fecha_nacimiento",
+            "sexo",
+            "nacionalidad",
+            "numero_permiso",
+            "fecha_expiracion",
+            "fecha_emision",
+            "motivo_visita",
+            "duracion",
+            "ciudad_emision",
+            "sello"
+          ],
+          "validaciones": [
+            "fecha_expiracion > fecha_actual",
+            "motivo_visita en motivos_permitidos",
+            "duracion <= duracion_maxima_para_nacionalidad",
+            "sello presente y válido"
+          ]
+        },
+        {
+          "tipo": "permiso_trabajo",
+          "campos": [
+            "nombre",
+            "fecha_nacimiento",
+            "sexo",
+            "nacionalidad",
+            "numero_permiso",
+            "fecha_expiracion",
+            "empleador",
+            "cargo",
+            "sello"
+          ],
+          "validaciones": [
+            "fecha_expiracion > fecha_actual",
+            "empleador autorizado",
+            "sello presente y válido"
+          ]
+        },
+        {
+          "tipo": "asilo",
+          "campos": [
+            "nombre",
+            "fecha_nacimiento",
+            "sexo",
+            "nacionalidad",
+            "numero_asilo",
+            "fecha_expiracion",
+            "razon",
+            "sello"
+          ],
+          "validaciones": [
+            "fecha_expiracion > fecha_actual",
+            "razon válida",
+            "sello presente y válido"
+          ]
+        }
+      ],
+
+      "reglas": {
+        "nacionalidades_permitidas": [
+          "Arstotzka",
+          "Kolechia",
+          "Antegria",
+          "Impor",
+          "Obristán",
+          "Federación Unida"
+        ],
+        "sexos_permitidos": ["M", "F"],
+        "motivos_permitidos": [
+          "Trabajo",
+          "Visita",
+          "Tránsito",
+          "Diplomático",
+          "Asilo"
+        ],
+
+        "discrepancias_para_denegar": [
+          "nombre no coincide",
+          "fecha_nacimiento no coincide",
+          "pasaporte expirado",
+          "documento requerido faltante",
+          "sello incorrecto",
+          "nacionalidad no permitida",
+          "documento falso detectado"
+        ],
+
+        "horarios_de_entrada": {
+          "inicio": "06:00",
+          "fin": "22:00"
+        }
+      },
+      "eventos": [
+        {
+          "id_evento": "d01_e01",
+          "nombre": "Primer día con alta afluencia",
+          "descripcion": "Más personas llegan durante el turno de la mañana, aumentando la cola.",
+          "efectos": {
+            "multiplicador_cola": 1.5,
+            "limite_tiempo_segundos": 3600
+          }
+        },
+        {
+          "id_evento": "d02_e01",
+          "nombre": "Llegada de refugiados",
+          "descripcion": "Un grupo grande de refugiados intenta cruzar la frontera, lo que aumenta la tensión.",
+          "efectos": {
+            "multiplicador_cola": 1.8,
+            "presion_moral": 10
+          }
+        },
+        {
+          "id_evento": "d03_e01",
+          "nombre": "Actualización de reglas",
+          "descripcion": "Se añaden nuevas reglas y documentos requeridos para entrar al país.",
+          "efectos": {
+            "tiempo_adicional_revisión_segundos": 5,
+            "incremento_probabilidad_error": 0.2
+          }
+        },
+        {
+          "id_evento": "d04_e01",
+          "nombre": "Inspección sorpresa",
+          "descripcion": "El supervisor hace una inspección, aumentando la presión sobre el inspector.",
+          "efectos": {
+            "multiplicador_error": 1.5,
+            "presion_moral": 15
+          }
+        },
+        {
+          "id_evento": "d05_e01",
+          "nombre": "Amenaza terrorista",
+          "descripcion": "Aumenta la probabilidad de documentos falsos y personas sospechosas.",
+          "efectos": {
+            "probabilidad_documento_falso": 0.3
+          }
+        },
+        {
+          "id_evento": "d06_e01",
+          "nombre": "Falla en el sistema informático",
+          "descripcion": "No se pueden verificar bases de datos electrónicas, la revisión es más difícil.",
+          "efectos": {
+            "deshabilitar_verificacion_bd": true,
+            "multiplicador_error": 1.7
+          }
+        },
+        {
+          "id_evento": "d07_e01",
+          "nombre": "Protesta política",
+          "descripcion": "Manifestantes frente al puesto de control causan distracciones.",
+          "efectos": {
+            "multiplicador_error": 1.4,
+            "presion_moral": 20
+          }
+        },
+        {
+          "id_evento": "d08_e01",
+          "nombre": "Racionamiento de recursos",
+          "descripcion": "Se reducen los recursos disponibles para el puesto de control.",
+          "efectos": {
+            "reduccion_personal": 0.5,
+            "tiempo_adicional_revisión_segundos": 10
+          }
+        },
+        {
+          "id_evento": "d09_e01",
+          "nombre": "Ataque terrorista frustrado",
+          "descripcion": "Se detienen varios terroristas intentando cruzar la frontera.",
+          "efectos": {
+            "incremento_probabilidad_revisiones": 0.5,
+            "penalización_por_error": 3
+          }
+        },
+        {
+          "id_evento": "d10_e01",
+          "nombre": "Día festivo nacional",
+          "descripcion": "Menos personas intentan cruzar, pero se requiere cuidado especial en documentos.",
+          "efectos": {
+            "multiplicador_cola": 0.7,
+            "incremento_verificacion": true
+          }
+        }
+      ],
+
+      "penalizaciones": [
+        {
+          "tipo": "multa",
+          "razon": "aprobó documento falso",
+          "monto": 5
+        },
+        {
+          "tipo": "multa",
+          "razon": "denegó a un solicitante válido",
+          "monto": 3
+        },
+        {
+          "tipo": "advertencia",
+          "razon": "pasó por alto una discrepancia",
+          "max_advertencias": 3
+        }
+      ],
+
+      "estadisticas_jugador": [
+        "dinero",
+        "advertencias",
+        "dias_trabajados",
+        "salud_familiar",
+        "moral"
+      ],
+
+      "tiempo": {
+        "turnos": [
+          {
+            "nombre": "mañana",
+            "inicio": "06:00",
+            "fin": "14:00"
+          },
+          {
+            "nombre": "tarde",
+            "inicio": "14:00",
+            "fin": "22:00"
+          }
+        ],
+        "duracion_dia_minutos": 60
+      }
+    }
+  }
+}

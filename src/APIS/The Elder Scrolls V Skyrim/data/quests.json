@@ -1,0 +1,98 @@
+[
+  {
+    "Name": "Azura",
+    "Quest": "The Black Star",
+    "Location": "Shrine of Azura",
+    "Hold": "Winterhold"
+  },
+  {
+    "Name": "Boethiah",
+    "Quest": "Boethiah's Calling",
+    "Location": "Sacellum of Boethiah",
+    "Hold": "Eastmarch"
+  },
+  {
+    "Name": "Clavicus Vile",
+    "Quest": "A Daedra's Best Friend",
+    "Location": "Falkreath",
+    "Hold": "Falkreath Hold"
+  },
+  {
+    "Name": "Hermaeus Mora",
+    "Quest": "Discerning the Transmundane",
+    "Location": "Septimus Signus' Outpost",
+    "Hold": "Winterhold"
+  },
+  {
+    "Name": "Hircine",
+    "Quest": "Ill Met by Moonlight",
+    "Location": "Falkreath",
+    "Hold": "Falkreath Hold"
+  },
+  {
+    "Name": "Malacath",
+    "Quest": "The Cursed Tribe",
+    "Location": "Largashbur",
+    "Hold": "The Rift"
+  },
+  {
+    "Name": "Mehrunes Dagon",
+    "Quest": "Pieces of the Past",
+    "Location": "Dawnstar",
+    "Hold": "The Pale"
+  },
+  {
+    "Name": "Mephala",
+    "Quest": "The Whispering Door",
+    "Location": "Dragonsreach",
+    "Hold": "Whiterun Hold"
+  },
+  {
+    "Name": "Meridia",
+    "Quest": "The Break of Dawn",
+    "Location": "Statue to Meridia",
+    "Hold": "Haafingar"
+  },
+  {
+    "Name": "Molag Bal",
+    "Quest": "The House of Horrors",
+    "Location": "Markarth",
+    "Hold": "The Reach"
+  },
+  {
+    "Name": "Namira",
+    "Quest": "The Taste of Death",
+    "Location": "Markarth",
+    "Hold": "The Reach"
+  },
+  {
+    "Name": "Peryite",
+    "Quest": "The Only Cure",
+    "Location": "Shrine to Peryite",
+    "Hold": "The Reach"
+  },
+  {
+    "Name": "Sanguine",
+    "Quest": "A Night to Remember",
+    "Location": "Whiterun",
+    "Hold": "Whiterun Hold"
+  },
+  {
+    "Name": "Sheogorath",
+    "Quest": "The Mind of Madness",
+    "Location": "Blue Palace",
+    "Hold": "Haafingar"
+  },
+  {
+    "Name": "Vaermina",
+    "Quest": "Waking Nightmare",
+    "Location": "Dawnstar",
+    "Hold": "The Pale"
+  },
+  {
+    "Name": "Nocturnal",
+    "Quest": "Thieves Guild*",
+    "Location": "Riften",
+    "Hold": "The Rift"
+  }
+]

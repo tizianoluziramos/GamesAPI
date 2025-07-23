@@ -1,0 +1,46 @@
+{
+  "countries": [
+    {
+      "name": "Arstotzka",
+      "abbreviation": "AR",
+      "capital": "Orvech Vonor",
+      "cities": ["Orvech Vonor", "East Grestin", "Paradizna"]
+    },
+    {
+      "name": "Kolechia",
+      "abbreviation": "KO",
+      "capital": "Vedor",
+      "cities": ["Vedor", "West Grestin", "Yurko City"]
+    },
+    {
+      "name": "Impor",
+      "abbreviation": "IM",
+      "capital": "Haihan",
+      "cities": ["Haihan", "Tsunkeido", "Enkyo"]
+    },
+    {
+      "name": "Antegria",
+      "abbreviation": "AN",
+      "capital": "Glorian",
+      "cities": ["Glorian", "Outer Grouse", "Saint Marmero"]
+    },
+    {
+      "name": "Obristán",
+      "abbreviation": "OB",
+      "capital": "Lorndaz",
+      "cities": ["Lorndaz", "Skal", "Mergerous"]
+    },
+    {
+      "name": "Republia",
+      "abbreviation": "RE",
+      "capital": "True Glorian",
+      "cities": ["True Glorian", "Lesrenadi", "Bostan"]
+    },
+    {
+      "name": "United Federation",
+      "abbreviation": "UF",
+      "capital": "Great Rapid",
+      "cities": ["Great Rapid", "Shingleton", "Korista City"]
+    }
+  ]
+}

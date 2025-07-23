@@ -1,0 +1,44 @@
+import { Router } from "express";
+import attributes from "./routes/attributes.route";
+import biomes from "./routes/biomes.route";
+import blockColissionShapes from "./routes/blockColissionShapes.route";
+import blocks from "./routes/blocks.route";
+import effects from "./routes/effects.route";
+import enchantments from "./routes/enchantments.route";
+import entities from "./routes/entities.route";
+import foods from "./routes/foods.route";
+import instruments from "./routes/instruments.route";
+import items from "./routes/items.route";
+import materials from "./routes/materials.route";
+import particles from "./routes/particles.route";
+import recipes from "./routes/recipes.route";
+import sounds from "./routes/sounds.route";
+import tints from "./routes/tints.route";
+import language from "./routes/language.route";
+import protocol from "./routes/protocol.route";
+import indexController from "./controllers/index.controller";
+import loginPacket from "./routes/loginPacket.route";
+
+const index = Router();
+
+index.get("/", indexController.getRoutes);
+index.use("/attributes", attributes);
+index.use("/biomes", biomes);
+index.use("/blockColissionShapes", blockColissionShapes);
+index.use("/blocks", blocks);
+index.use("/effects", effects);
+index.use("/enchantments", enchantments);
+index.use("/entities", entities);
+index.use("/foods", foods);
+index.use("/instruments", instruments);
+index.use("/items", items);
+index.use("/materials", materials);
+index.use("/particles", particles);
+index.use("/recipes", recipes);
+index.use("/sounds", sounds);
+index.use("/tints", tints);
+index.use("/language", language);
+index.use("/protocol", protocol);
+index.use("/loginPacket", loginPacket);
+
+export default index;

@@ -1,0 +1,152 @@
+{
+  "english": {
+    "title": "Papers, Please: The Short Film",
+    "year": 2018,
+    "duration": "11:58",
+    "directors": ["Nikita Ordynskiy"],
+    "original_creator": "Lucas Pope",
+    "country": "Russia",
+    "original_language": "Russian",
+    "genres": ["Short", "Drama", "Dystopian"],
+    "synopsis": "A cinematic adaptation of the game 'Papers, Please', where a border inspector must make difficult decisions while checking documents in a fictional totalitarian nation.",
+    "cast": [
+      { "actor": "Igor Savochkin", "character": "Inspector" },
+      { "actor": "Antonina Kravchuk", "character": "Suspicious Citizen" },
+      { "actor": "Gennady Kurilenko", "character": "Officer" }
+    ],
+    "available_on": ["YouTube", "Steam", "Vimeo"],
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=YFHHGETsxkE",
+      "steam": "https://store.steampowered.com/app/1045510/Papers_Please_Short_Film/",
+      "vimeo": "https://vimeo.com/313409282"
+    },
+    "images": ["https://i.ytimg.com/vi/YFHHGETsxkE/maxresdefault.jpg"],
+    "themes": [
+      "Totalitarianism",
+      "Moral decisions",
+      "Bureaucracy",
+      "Border control",
+      "Humanity vs duty"
+    ],
+    "awards": [],
+    "inspiration": "Directly based on the video game 'Papers, Please' by Lucas Pope.",
+    "relation_to_game": {
+      "setting": "Arstotzka, 1982",
+      "fidelity": "High",
+      "shared_elements": [
+        "Checkpoint booth design",
+        "Iconic quotes",
+        "Approval/rejection stamps"
+      ]
+    },
+    "reception": {
+      "critical": "Mostly positive",
+      "highlighted_comments": [
+        "Faithful to the spirit of the game",
+        "Strong performance by the lead actor",
+        "Surprisingly professional production for an indie short"
+      ],
+      "community_rating": 8.5
+    }
+  },
+  "spanish": {
+    "titulo": "Papers, Please: The Short Film",
+    "anio": 2018,
+    "duracion": "11:58",
+    "directores": ["Nikita Ordynskiy"],
+    "creador_original": "Lucas Pope",
+    "pais": "Rusia",
+    "idioma_original": "Ruso",
+    "genero": ["Corto", "Drama", "Distopía"],
+    "sinopsis": "Adaptación cinematográfica del juego 'Papers, Please', en la que un inspector fronterizo debe tomar decisiones difíciles al revisar documentos en una nación ficticia totalitaria.",
+    "elenco": [
+      { "actor": "Igor Savochkin", "personaje": "Inspector" },
+      { "actor": "Antonina Kravchuk", "personaje": "Ciudadana sospechosa" },
+      { "actor": "Gennady Kurilenko", "personaje": "Oficial" }
+    ],
+    "plataformas_disponibles": ["YouTube", "Steam", "Vimeo"],
+    "enlaces": {
+      "youtube": "https://www.youtube.com/watch?v=YFHHGETsxkE",
+      "steam": "https://store.steampowered.com/app/1045510/Papers_Please_Short_Film/",
+      "vimeo": "https://vimeo.com/313409282"
+    },
+    "imagenes": ["https://i.ytimg.com/vi/YFHHGETsxkE/maxresdefault.jpg"],
+    "temas": [
+      "Totalitarismo",
+      "Decisiones morales",
+      "Burocracia",
+      "Control fronterizo",
+      "Humanidad vs deber"
+    ],
+    "premios": [],
+    "inspiracion": "Basada directamente en el videojuego 'Papers, Please' de Lucas Pope.",
+    "relacion_con_el_juego": {
+      "ambientacion": "Arstotzka, 1982",
+      "fidelidad": "Alta",
+      "detalles_compartidos": [
+        "Diseño del puesto fronterizo",
+        "Frases icónicas",
+        "Sellos de aprobación/rechazo"
+      ]
+    },
+    "recepcion": {
+      "critica": "Mayormente positiva",
+      "comentarios_destacados": [
+        "Fiel al espíritu del juego",
+        "Gran actuación del protagonista",
+        "Producción sorprendentemente profesional para un corto independiente"
+      ],
+      "valoracion_comunidad": 8.5
+    }
+  },
+  "portuguese": {
+    "titulo": "Papers, Please: O Curta-Metragem",
+    "ano": 2018,
+    "duracao": "11:58",
+    "diretores": ["Nikita Ordynskiy"],
+    "criador_original": "Lucas Pope",
+    "pais": "Rússia",
+    "idioma_original": "Russo",
+    "genero": ["Curta", "Drama", "Distopia"],
+    "sinopse": "Uma adaptação cinematográfica do jogo 'Papers, Please', onde um inspetor de fronteira deve tomar decisões difíceis ao verificar documentos em uma nação totalitária fictícia.",
+    "elenco": [
+      { "ator": "Igor Savochkin", "personagem": "Inspetor" },
+      { "ator": "Antonina Kravchuk", "personagem": "Cidadã suspeita" },
+      { "ator": "Gennady Kurilenko", "personagem": "Oficial" }
+    ],
+    "plataformas_disponiveis": ["YouTube", "Steam", "Vimeo"],
+    "links": {
+      "youtube": "https://www.youtube.com/watch?v=YFHHGETsxkE",
+      "steam": "https://store.steampowered.com/app/1045510/Papers_Please_Short_Film/",
+      "vimeo": "https://vimeo.com/313409282"
+    },
+    "imagens": ["https://i.ytimg.com/vi/YFHHGETsxkE/maxresdefault.jpg"],
+    "temas": [
+      "Totalitarismo",
+      "Decisões morais",
+      "Burocracia",
+      "Controle de fronteira",
+      "Humanidade vs dever"
+    ],
+    "premios": [],
+    "inspiracao": "Baseado diretamente no jogo 'Papers, Please' de Lucas Pope.",
+    "relacao_com_o_jogo": {
+      "ambientacao": "Arstotzka, 1982",
+      "fidelidade": "Alta",
+      "elementos_compartilhados": [
+        "Design do posto de controle",
+        "Frases icônicas",
+        "Carimbos de aprovação/rejeição"
+      ]
+    },
+    "recepcao": {
+      "critica": "Maioritariamente positiva",
+      "comentarios_destaque": [
+        "Fiel ao espírito do jogo",
+        "Grande atuação do protagonista",
+        "Produção surpreendentemente profissional para um curta independente"
+      ],
+      "avaliacao_comunidade": 8.5
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "spanish": {
+    "titulo": "Papers, Please - Lore",
+    "secciones": [
+      {
+        "id": 1,
+        "titulo": "Introducción",
+        "contenido": "Papers, Please es un videojuego independiente desarrollado por Lucas Pope y lanzado en 2013. Ambientado en un universo ficticio inspirado en la Europa del Este durante la Guerra Fría, el jugador toma el papel de un inspector de inmigración en el puesto fronterizo de Arstotzka, un país totalitario. El objetivo principal es controlar el flujo de personas que entran al país, cumpliendo con estrictas regulaciones y a la vez lidiando con dilemas morales, decisiones difíciles y consecuencias inesperadas."
+      },
+      {
+        "id": 2,
+        "titulo": "El mundo de Arstotzka",
+        "contenido": "Arstotzka es un estado comunista ficticio ubicado en Europa del Este, creado para evocar la atmósfera de países bajo regímenes autoritarios durante finales del siglo XX. El país es un lugar marcado por la vigilancia constante, la desconfianza y la burocracia pesada. La frontera del juego está inspirada en los antiguos puntos de control de la Europa del Este y refleja la tensión entre seguridad estatal y libertad individual.\n\nEl país tiene una población trabajadora sometida a dificultades económicas, con escasez de recursos básicos, y un gobierno que controla estrictamente la información, el movimiento y las vidas de sus ciudadanos. Las familias dependen del trabajo y el sueldo de un solo miembro, en este caso, el inspector."
+      },
+      {
+        "id": 3,
+        "titulo": "Contexto geopolítico y países vecinos",
+        "contenido": "Arstotzka está rodeada de países ficticios con distintas relaciones políticas y conflictos con el régimen:\n\n- Kolechia: Un país vecino con tensiones históricas y políticas con Arstotzka. A menudo se le representa como enemigo o competidor.\n- Obristan: Otro país con el que Arstotzka tiene disputas territoriales y políticas.\n- Antegria y Republia: Países vecinos que ofrecen distintos grados de cooperación o conflicto.\n- EZIC: Una organización secreta que actúa dentro y fuera de Arstotzka, intentando influir en el gobierno y cambiar el curso político del país.\n\nEstas relaciones impactan directamente en el flujo de inmigrantes y las políticas migratorias que el inspector debe aplicar."
+      },
+      {
+        "id": 4,
+        "titulo": "El rol del inspector",
+        "contenido": "El jugador es un inspector de inmigración novato que trabaja en el puesto fronterizo con la tarea de aceptar o rechazar solicitudes de entrada al país. Su trabajo consiste en revisar documentos como pasaportes, visas, permisos de trabajo, certificados médicos y otros papeles, verificando su validez y consistencia según las normas que cambian constantemente.\n\nEl inspector debe balancear la necesidad de mantener el orden y seguridad nacional con la empatía y las decisiones éticas personales, mientras cuida de su familia que depende del salario obtenido."
+      },
+      {
+        "id": 5,
+        "titulo": "Familia del inspector",
+        "contenido": "La familia del inspector está compuesta por su esposa y dos hijos. Durante el juego, el salario obtenido debe usarse para pagar renta, comida, calefacción y otros gastos necesarios para la supervivencia de la familia. El jugador debe manejar bien sus ingresos y decisiones para evitar la pobreza o la tragedia familiar.\n\nLas escenas familiares muestran las consecuencias directas de las decisiones del jugador y crean una conexión emocional con el trabajo cotidiano."
+      },
+      {
+        "id": 6,
+        "titulo": "Mecánicas y sistemas de juego",
+        "contenido": "- Verificación documental: El inspector debe revisar datos como nombres, fechas de nacimiento, fechas de expiración, sellos y fotografías. Los errores o inconsistencias pueden resultar en multas o arrestos.\n\n- Cambios diarios: Cada día de trabajo trae nuevas reglas, nuevos documentos requeridos, y excepciones que complican la labor del inspector.\n\n- Sobornos y corrupción: Algunos personajes intentan sobornar o manipular al inspector para cruzar la frontera o obtener beneficios.\n\n- Contrabando y terrorismo: El inspector debe detectar objetos ilegales como armas, drogas o documentos falsos. También debe lidiar con intentos de terrorismo.\n\n- EZIC y conspiraciones: A lo largo del juego, la organización EZIC contacta al inspector para pedir colaboración o sabotaje, abriendo caminos narrativos alternativos."
+      },
+      {
+        "id": 7,
+        "titulo": "Personajes importantes",
+        "contenido": "- Inspector (protagonista): Personaje sin nombre que el jugador controla. Su historia y destino dependen de las elecciones hechas.\n\n- Familia: Su esposa y dos hijos que representan la vida personal y emocional del inspector.\n\n- EZIC: Organización clandestina con varios agentes y objetivos secretos que buscan derrocar al gobierno corrupto.\n\n- Oficiales de frontera y agentes de seguridad: Representan la autoridad estatal, algunos son aliados y otros antagonistas.\n\n- Visitantes recurrentes: Personas con historias propias que reaparecen durante el juego, algunos con motivos ocultos o solicitudes especiales."
+      },
+      {
+        "id": 8,
+        "titulo": "Eventos narrativos y decisiones",
+        "contenido": "A lo largo de los 31 días que dura el juego, ocurren eventos clave que desafían al jugador:\n\n- Ataques terroristas que generan caos y cambios en las reglas.\n- Intentos de soborno y coacción.\n- Peticiones especiales de refugiados y disidentes.\n- La invitación y presión de EZIC para que el inspector tome decisiones que pueden alterar el destino del país.\n- Elecciones morales: ayudar a alguien a entrar ilegalmente, denunciar o proteger a otros, colaborar o traicionar.\n\nEstas decisiones afectan los posibles finales."
+      },
+      {
+        "id": 9,
+        "titulo": "Finales múltiples y consecuencias",
+        "contenido": "Papers, Please tiene más de 20 finales posibles que dependen de las elecciones y acciones del jugador. Algunos ejemplos:\n\n- Mantener el trabajo como inspector y continuar con la vida rutinaria.\n- Ayudar a EZIC a derrocar el gobierno.\n- Escapar del país con la familia.\n- Ser arrestado o ejecutado por incumplimiento.\n- Sufrir la pérdida o muerte de la familia.\n- Ser ejecutado por EZIC o el Estado.\n- Variaciones intermedias según el grado de colaboración o resistencia."
+      },
+      {
+        "id": 10,
+        "titulo": "Temas y mensajes",
+        "contenido": "El juego explora temas profundos como:\n\n- La burocracia como herramienta de opresión.\n- La moralidad en contextos difíciles.\n- La vida cotidiana bajo regímenes autoritarios.\n- La lucha entre la seguridad nacional y las libertades individuales.\n- El costo humano de las decisiones administrativas.\n- La importancia de la empatía y la resistencia."
+      },
+      {
+        "id": 11,
+        "titulo": "Estilo visual y atmósfera",
+        "contenido": "El arte pixelado y la música retro recrean la atmósfera opresiva y gris del puesto fronterizo. Los detalles visuales y sonoros refuerzan la tensión y la monotonía del trabajo."
+      },
+      {
+        "id": 12,
+        "titulo": "Impacto cultural",
+        "contenido": "Papers, Please fue aclamado por su narrativa única, su jugabilidad innovadora y su capacidad para hacer reflexionar al jugador sobre la ética y la política. Ganó múltiples premios y es considerado un clásico moderno en juegos indie."
+      }
+    ]
+  },
+  "english": {
+    "titulo": "Papers, Please - Lore",
+    "secciones": [
+      {
+        "id": 1,
+        "titulo": "Introduction",
+        "contenido": "Papers, Please is an independent video game developed by Lucas Pope and released in 2013. Set in a fictional universe inspired by Eastern Europe during the Cold War, the player assumes the role of an immigration inspector at the border checkpoint of Arstotzka, a totalitarian country. The main objective is to control the flow of people entering the country by following strict regulations while dealing with moral dilemmas, difficult decisions, and unexpected consequences."
+      },
+      {
+        "id": 2,
+        "titulo": "The world of Arstotzka",
+        "contenido": "Arstotzka is a fictional communist state located in Eastern Europe, created to evoke the atmosphere of countries under authoritarian regimes in the late 20th century. The country is marked by constant surveillance, distrust, and heavy bureaucracy. The game's border is inspired by old Eastern European checkpoints and reflects the tension between state security and individual freedom.\n\nThe country has a working-class population facing economic hardships, scarcity of basic resources, and a government that strictly controls information, movement, and citizens' lives. Families depend on the work and salary of a single member, in this case, the inspector."
+      },
+      {
+        "id": 3,
+        "titulo": "Geopolitical context and neighboring countries",
+        "contenido": "Arstotzka is surrounded by fictional countries with varying political relationships and conflicts with the regime:\n\n- Kolechia: A neighboring country with historical and political tensions with Arstotzka. Often portrayed as an enemy or competitor.\n- Obristan: Another country with territorial and political disputes with Arstotzka.\n- Antegria and Republia: Neighboring countries offering different levels of cooperation or conflict.\n- EZIC: A secret organization operating inside and outside Arstotzka, attempting to influence the government and change the country's political course.\n\nThese relationships directly impact the flow of immigrants and the immigration policies the inspector must enforce."
+      },
+      {
+        "id": 4,
+        "titulo": "The role of the inspector",
+        "contenido": "The player is a novice immigration inspector working at the border checkpoint tasked with accepting or rejecting entry requests. Their job is to review documents such as passports, visas, work permits, medical certificates, and other papers, verifying their validity and consistency according to constantly changing rules.\n\nThe inspector must balance the need to maintain order and national security with empathy and personal ethical decisions while supporting a family dependent on their salary."
+      },
+      {
+        "id": 5,
+        "titulo": "Inspector's family",
+        "contenido": "The inspector's family consists of a wife and two children. During the game, the salary earned must be used to pay rent, food, heating, and other expenses necessary for the family's survival. The player must wisely manage income and decisions to avoid poverty or family tragedy.\n\nFamily scenes show the direct consequences of the player's decisions and create an emotional connection with the daily work."
+      },
+      {
+        "id": 6,
+        "titulo": "Game mechanics and systems",
+        "contenido": "- Document verification: The inspector must check details like names, birth dates, expiration dates, stamps, and photographs. Errors or inconsistencies may result in fines or arrests.\n\n- Daily changes: Each workday brings new rules, new required documents, and exceptions that complicate the inspector's job.\n\n- Bribes and corruption: Some characters attempt to bribe or manipulate the inspector to cross the border or obtain benefits.\n\n- Smuggling and terrorism: The inspector must detect illegal items such as weapons, drugs, or fake documents. They also face terrorism attempts.\n\n- EZIC and conspiracies: Throughout the game, the organization EZIC contacts the inspector to request collaboration or sabotage, opening alternative narrative paths."
+      },
+      {
+        "id": 7,
+        "titulo": "Important characters",
+        "contenido": "- Inspector (protagonist): A nameless character controlled by the player. Their story and fate depend on the choices made.\n\n- Family: The inspector's wife and two children represent their personal and emotional life.\n\n- EZIC: A clandestine organization with several agents and secret goals to overthrow the corrupt government.\n\n- Border officials and security agents: Represent the state authority, some allies and others antagonists.\n\n- Recurring visitors: People with their own stories who appear during the game, some with hidden motives or special requests."
+      },
+      {
+        "id": 8,
+        "titulo": "Narrative events and decisions",
+        "contenido": "Over the 31 days of the game, key events challenge the player:\n\n- Terrorist attacks causing chaos and rule changes.\n- Attempts at bribery and coercion.\n- Special requests from refugees and dissidents.\n- Invitations and pressure from EZIC for the inspector to make decisions that could alter the country's fate.\n- Moral choices: help someone enter illegally, report or protect others, collaborate or betray.\n\nThese decisions affect possible endings."
+      },
+      {
+        "id": 9,
+        "titulo": "Multiple endings and consequences",
+        "contenido": "Papers, Please has over 20 possible endings that depend on the player's choices and actions. Some examples:\n\n- Maintaining the job as inspector and continuing routine life.\n- Helping EZIC overthrow the government.\n- Escaping the country with the family.\n- Being arrested or executed for non-compliance.\n- Suffering family loss or death.\n- Being executed by EZIC or the State.\n- Intermediate variations depending on the degree of collaboration or resistance."
+      },
+      {
+        "id": 10,
+        "titulo": "Themes and messages",
+        "contenido": "The game explores deep themes such as:\n\n- Bureaucracy as a tool of oppression.\n- Morality in difficult contexts.\n- Everyday life under authoritarian regimes.\n- The struggle between national security and individual freedoms.\n- The human cost of administrative decisions.\n- The importance of empathy and resistance."
+      },
+      {
+        "id": 11,
+        "titulo": "Visual style and atmosphere",
+        "contenido": "Pixel art and retro music recreate the oppressive and gray atmosphere of the border post. Visual and sound details reinforce the tension and monotony of the work."
+      },
+      {
+        "id": 12,
+        "titulo": "Cultural impact",
+        "contenido": "Papers, Please was acclaimed for its unique narrative, innovative gameplay, and ability to make players reflect on ethics and politics. It won multiple awards and is considered a modern classic in indie games."
+      }
+    ]
+  },
+  "portuguese": {
+    "titulo": "Papers, Please - Lore",
+    "secciones": [
+      {
+        "id": 1,
+        "titulo": "Introdução",
+        "contenido": "Papers, Please é um jogo independente desenvolvido por Lucas Pope e lançado em 2013. Ambientado em um universo fictício inspirado na Europa Oriental durante a Guerra Fria, o jogador assume o papel de um inspetor de imigração no posto de fronteira de Arstotzka, um país totalitário. O objetivo principal é controlar o fluxo de pessoas que entram no país, cumprindo regulamentações rígidas e lidando com dilemas morais, decisões difíceis e consequências inesperadas."
+      },
+      {
+        "id": 2,
+        "titulo": "O mundo de Arstotzka",
+        "contenido": "Arstotzka é um estado comunista fictício localizado na Europa Oriental, criado para evocar a atmosfera de países sob regimes autoritários no final do século XX. O país é marcado por vigilância constante, desconfiança e burocracia pesada. A fronteira do jogo é inspirada nos antigos postos de controle da Europa Oriental e reflete a tensão entre segurança estatal e liberdade individual.\n\nO país possui uma população trabalhadora enfrentando dificuldades econômicas, escassez de recursos básicos e um governo que controla rigorosamente informações, movimentação e vidas dos cidadãos. As famílias dependem do trabalho e do salário de um único membro, neste caso, o inspetor."
+      },
+      {
+        "id": 3,
+        "titulo": "Contexto geopolítico e países vizinhos",
+        "contenido": "Arstotzka é cercada por países fictícios com diferentes relações políticas e conflitos com o regime:\n\n- Kolechia: Um país vizinho com tensões históricas e políticas com Arstotzka. Frequentemente retratado como inimigo ou competidor.\n- Obristan: Outro país com disputas territoriais e políticas com Arstotzka.\n- Antegria e Republia: Países vizinhos que oferecem diferentes níveis de cooperação ou conflito.\n- EZIC: Uma organização secreta que atua dentro e fora de Arstotzka, tentando influenciar o governo e mudar o curso político do país.\n\nEssas relações impactam diretamente o fluxo de imigrantes e as políticas migratórias que o inspetor deve aplicar."
+      },
+      {
+        "id": 4,
+        "titulo": "O papel do inspetor",
+        "contenido": "O jogador é um inspetor de imigração novato que trabalha no posto de fronteira com a tarefa de aceitar ou rejeitar pedidos de entrada no país. Seu trabalho consiste em revisar documentos como passaportes, vistos, permissões de trabalho, certificados médicos e outros papéis, verificando sua validade e consistência de acordo com regras que mudam constantemente.\n\nO inspetor deve equilibrar a necessidade de manter a ordem e segurança nacional com a empatia e decisões éticas pessoais, enquanto cuida de sua família que depende do salário obtido."
+      },
+      {
+        "id": 5,
+        "titulo": "Família do inspetor",
+        "contenido": "A família do inspetor é composta por sua esposa e dois filhos. Durante o jogo, o salário obtido deve ser usado para pagar aluguel, comida, aquecimento e outras despesas necessárias para a sobrevivência da família. O jogador deve gerenciar bem seus rendimentos e decisões para evitar pobreza ou tragédia familiar.\n\nAs cenas familiares mostram as consequências diretas das decisões do jogador e criam uma conexão emocional com o trabalho cotidiano."
+      },
+      {
+        "id": 6,
+        "titulo": "Mecânicas e sistemas de jogo",
+        "contenido": "- Verificação documental: O inspetor deve revisar dados como nomes, datas de nascimento, datas de validade, carimbos e fotografias. Erros ou inconsistências podem resultar em multas ou prisões.\n\n- Mudanças diárias: Cada dia de trabalho traz novas regras, novos documentos exigidos e exceções que complicam o trabalho do inspetor.\n\n- Subornos e corrupção: Alguns personagens tentam subornar ou manipular o inspetor para cruzar a fronteira ou obter benefícios.\n\n- Contrabando e terrorismo: O inspetor deve detectar objetos ilegais como armas, drogas ou documentos falsos. Também deve lidar com tentativas de terrorismo.\n\n- EZIC e conspirações: Ao longo do jogo, a organização EZIC contata o inspetor para pedir colaboração ou sabotagem, abrindo caminhos narrativos alternativos."
+      },
+      {
+        "id": 7,
+        "titulo": "Personagens importantes",
+        "contenido": "- Inspetor (protagonista): Personagem sem nome controlado pelo jogador. Sua história e destino dependem das escolhas feitas.\n\n- Família: Sua esposa e dois filhos que representam a vida pessoal e emocional do inspetor.\n\n- EZIC: Organização clandestina com vários agentes e objetivos secretos que buscam derrubar o governo corrupto.\n\n- Oficiais de fronteira e agentes de segurança: Representam a autoridade estatal, alguns aliados e outros antagonistas.\n\n- Visitantes recorrentes: Pessoas com suas próprias histórias que reaparecem durante o jogo, algumas com motivos ocultos ou pedidos especiais."
+      },
+      {
+        "id": 8,
+        "titulo": "Eventos narrativos e decisões",
+        "contenido": "Ao longo dos 31 dias de duração do jogo, eventos chave desafiam o jogador:\n\n- Ataques terroristas que geram caos e mudanças nas regras.\n- Tentativas de suborno e coerção.\n- Pedidos especiais de refugiados e dissidentes.\n- Convites e pressão da EZIC para que o inspetor tome decisões que podem alterar o destino do país.\n- Escolhas morais: ajudar alguém a entrar ilegalmente, denunciar ou proteger outros, colaborar ou trair.\n\nEssas decisões afetam os possíveis finais."
+      },
+      {
+        "id": 9,
+        "titulo": "Múltiplos finais e consequências",
+        "contenido": "Papers, Please possui mais de 20 finais possíveis que dependem das escolhas e ações do jogador. Alguns exemplos:\n\n- Manter o trabalho como inspetor e continuar a vida rotineira.\n- Ajudar a EZIC a derrubar o governo.\n- Fugir do país com a família.\n- Ser preso ou executado por descumprimento.\n- Sofrer a perda ou morte da família.\n- Ser executado pela EZIC ou pelo Estado.\n- Variações intermediárias dependendo do grau de colaboração ou resistência."
+      },
+      {
+        "id": 10,
+        "titulo": "Temas e mensagens",
+        "contenido": "O jogo explora temas profundos como:\n\n- Burocracia como ferramenta de opressão.\n- Moralidade em contextos difíceis.\n- Vida cotidiana sob regimes autoritários.\n- A luta entre segurança nacional e liberdades individuais.\n- O custo humano das decisões administrativas.\n- A importância da empatia e resistência."
+      },
+      {
+        "id": 11,
+        "titulo": "Estilo visual e atmosfera",
+        "contenido": "A arte pixelada e a música retrô recriam a atmosfera opressiva e cinzenta do posto de fronteira. Os detalhes visuais e sonoros reforçam a tensão e a monotonia do trabalho."
+      },
+      {
+        "id": 12,
+        "titulo": "Impacto cultural",
+        "contenido": "Papers, Please foi aclamado por sua narrativa única, jogabilidade inovadora e capacidade de fazer o jogador refletir sobre ética e política. Ganhou vários prêmios e é considerado um clássico moderno dos jogos indie."
+      }
+    ]
+  },
+  "japanese": {
+    "titulo": "ペーパーズ、プリーズ - ロア",
+    "secciones": [
+      {
+        "id": 1,
+        "titulo": "はじめに",
+        "contenido": "ペーパーズ、プリーズはルーカス・ポープによって開発され、2013年にリリースされたインディーゲームです。冷戦時代の東ヨーロッパに着想を得た架空の世界を舞台に、プレイヤーは全体主義国家アルストツカの国境検査官としての役割を担います。主な目的は、厳しい規制を守りつつ、国に入る人々の流れを管理し、道徳的ジレンマや難しい決断、予期せぬ結果に直面することです。"
+      },
+      {
+        "id": 2,
+        "titulo": "アルストツカの世界",
+        "contenido": "アルストツカは20世紀後半の権威主義政権下の国々の雰囲気を呼び起こすために作られた、東ヨーロッパに位置する架空の共産主義国家です。この国は常時監視、不信感、重い官僚主義に特徴づけられています。ゲームの国境は東ヨーロッパの旧検問所に触発されており、国家安全保障と個人の自由の緊張関係を反映しています。\n\n国は経済的困難に直面している労働者階級で構成されており、基本的な資源は不足し、市民の情報、移動、生活は厳重に管理されています。家族は一人の稼ぎ手、つまり検査官の収入に依存しています。"
+      },
+      {
+        "id": 3,
+        "titulo": "地政学的背景と隣国",
+        "contenido": "アルストツカは以下のような架空の国々に囲まれており、それぞれ異なる政治的関係や紛争があります：\n\n- コレキア：アルストツカと歴史的・政治的緊張関係にある隣国。しばしば敵または競争相手として描かれる。\n- オブリスタン：領土と政治的対立がある別の国。\n- アンテグリアとレプブリア：協力や対立の度合いが異なる隣国。\n- EZIC：アルストツカ内外で活動し、政府に影響を与え政治の流れを変えようとする秘密組織。\n\nこれらの関係は移民の流れや検査官が適用する移民政策に直接影響を与えます。"
+      },
+      {
+        "id": 4,
+        "titulo": "検査官の役割",
+        "contenido": "プレイヤーは新人の入国検査官として国境で働き、入国申請の承認や拒否を行います。パスポート、ビザ、就労許可証、医療証明書などの書類を審査し、規則の変更に伴う有効性や整合性を確認します。\n\n検査官は国家の秩序と安全を維持する必要性と、個人的な倫理的決断や家族への配慮をバランスよく行う必要があります。"
+      },
+      {
+        "id": 5,
+        "titulo": "検査官の家族",
+        "contenido": "検査官の家族は妻と二人の子供で構成されています。ゲーム中、得た給料は家賃、食費、暖房費など家族の生活維持に使われます。プレイヤーは収入と判断を上手く管理し、貧困や家族の悲劇を避ける必要があります。\n\n家族のシーンはプレイヤーの決断の直接的な結果を示し、日々の仕事に感情的なつながりを生み出します。"
+      },
+      {
+        "id": 6,
+        "titulo": "ゲームの仕組みとシステム",
+        "contenido": "- 書類確認：名前、生年月日、有効期限、スタンプ、写真などのデータを確認します。不備や矛盾は罰金や逮捕の原因になります。\n\n- 毎日の変更：勤務ごとに新しいルール、新しい必要書類、例外が導入され、検査官の仕事を複雑にします。\n\n- 賄賂と腐敗：一部の人物は国境を通過するために検査官に賄賂や操作を試みます。\n\n- 密輸とテロリズム：検査官は武器、薬物、偽造書類などの違法物を検出し、テロ行為の試みにも対処します。\n\n- EZICと陰謀：ゲームを通じてEZICは検査官に協力や妨害を求め、物語の分岐を開きます。"
+      },
+      {
+        "id": 7,
+        "titulo": "重要なキャラクター",
+        "contenido": "- 検査官（主人公）：名前のないキャラクターで、プレイヤーが操作します。彼の物語と運命はプレイヤーの選択に依存します。\n\n- 家族：妻と二人の子供で、検査官の私生活と感情を象徴します。\n\n- EZIC：腐敗政府を打倒しようとする秘密組織で、多くのエージェントと秘密の目的があります。\n\n- 国境警備隊と治安部隊：国家権力を代表し、味方や敵対者が存在します。\n\n- 常連の訪問者：固有の物語を持ち、ゲーム中に再登場する人物たちで、一部は隠された動機や特別な要求があります。"
+      },
+      {
+        "id": 8,
+        "titulo": "物語のイベントと決断",
+        "contenido": "ゲームの31日間を通じて、プレイヤーを試す重要なイベントが発生します：\n\n- テロ攻撃による混乱とルールの変更。\n- 賄賂や強要の試み。\n- 難民や反体制派の特別な申請。\n- EZICからの招待と圧力によって、国の運命を変える決断を促される。\n- 道徳的選択：違法な入国を助ける、他者を告発または保護、協力または裏切り。\n\nこれらの決断は複数の結末に影響を与えます。"
+      },
+      {
+        "id": 9,
+        "titulo": "複数の結末と結果",
+        "contenido": "ペーパーズ、プリーズには20以上の結末が存在し、プレイヤーの選択と行動により変化します。例として：\n\n- 検査官の仕事を続けて日常生活を送る。\n- EZICを助けて政府を打倒する。\n- 家族と共に国を脱出する。\n- 規則違反で逮捕または処刑される。\n- 家族の喪失や死亡を経験する。\n- EZICまたは国家によって処刑される。\n- 協力や抵抗の度合いによる中間的な変化。"
+      },
+      {
+        "id": 10,
+        "titulo": "テーマとメッセージ",
+        "contenido": "ゲームは以下の深いテーマを探求しています：\n\n- 官僚主義は抑圧の道具である。\n- 困難な状況での道徳性。\n- 権威主義政権下の日常生活。\n- 国家安全保障と個人の自由の闘い。\n- 行政的決定の人間的コスト。\n- 共感と抵抗の重要性。"
+      },
+      {
+        "id": 11,
+        "titulo": "ビジュアルスタイルと雰囲気",
+        "contenido": "ピクセルアートとレトロ音楽が、抑圧的で灰色の国境検査所の雰囲気を再現しています。視覚的・音響的な細部が緊張感と単調さを強調しています。"
+      },
+      {
+        "id": 12,
+        "titulo": "文化的影響",
+        "contenido": "ペーパーズ、プリーズは独特な物語性、革新的なゲームプレイ、倫理や政治について考えさせる力で高く評価され、多くの賞を受賞し、インディーゲームの現代のクラシックとされています。"
+      }
+    ]
+  }
+}

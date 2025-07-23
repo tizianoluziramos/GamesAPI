@@ -1,0 +1,10 @@
+{
+  "online-players": {
+    "Steam": {
+      "response": {
+        "player_count": 480,
+        "result": 1
+      }
+    }
+  }
+}

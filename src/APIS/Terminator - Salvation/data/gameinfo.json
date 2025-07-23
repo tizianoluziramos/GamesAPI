@@ -1,0 +1,52 @@
+{
+    "title": "Terminator Salvation (video game)",
+    "developer": ["Grin"],
+    "publisher": ["Equity Games", "Evolved Games"],
+    "directors": ["Ulf Andersson"],
+    "producers": ["Cos Lazouras", "Per Juhlén"],
+    "writers": ["Corey May", "Dooma Wendschuh"],
+    "composer": ["Trond Viggo Melssen"],
+    "series": "Terminator",
+    "engine": "Diesel",
+    "platforms": [
+        "Microsoft Windows", "PlayStation 3", "Xbox 360", "iOS", "Mobile phone"
+    ],
+    "release_dates": {
+        "iOS": "May 7, 2009",
+        "PlayStation 3": ["May 19, 2009 (NA)", "May 28, 2009 (AU)", "May 29, 2009 (EU)"],
+        "Xbox 360": ["May 19, 2009 (NA)", "May 28, 2009 (AU)", "May 29, 2009 (EU)"],
+        "Windows": ["May 19, 2009 (WW)", "May 28, 2009 (AU)", "May 29, 2009 (EU)", "June 15, 2009 (NA)"],
+        "Mobile phone": "May 22, 2009"
+    },
+    "genre": "Third-person shooter",
+    "modes": ["Single-player", "Multiplayer"],
+    "description": "Terminator Salvation is a third-person shooter action video game released to coincide with the film of the same title. Developed by Grin and Halcyon Games, it was the final game by Grin. The game follows John Connor and other characters as they battle Skynet forces. It received mostly negative reviews.",
+    "plot_summary": "Set in 2016, the story follows John Connor and his team as they navigate post-apocalyptic Los Angeles, battling Skynet machines. The game switches between characters like John Connor and Marcus Wright, depicting key events leading up to the film.",
+    "ios_version_summary": "In 2018, John Connor aids Resistance fighters in Los Angeles, completing missions against Skynet. Marcus Wright also appears, eventually joining the Resistance with Kyle Reese. The game ends with John infiltrating and destroying a Skynet facility.",
+    "development": "Announced in 2007, developed by Grin and Halcyon Games. Initially planned to include multiplayer, but it was removed to meet deadlines.",
+    "reception": {
+        "aggregated_scores": {
+            "GameRankings": {"iOS": "83%"},
+            "Metacritic": {
+                "PC": "49/100",
+                "PS3": "43/100",
+                "X360": "48/100"
+            }
+        },
+        "review_scores": {
+            "1Up.com": "D+",
+            "Destructoid": "3/10",
+            "Edge": "3/10",
+            "Eurogamer": "2/10",
+            "Game Informer": "5.5/10",
+            "GameSpot": "5/10",
+            "GameTrailers": "4.7/10",
+            "GameZone": "6/10",
+            "IGN": {
+                "iOS": "7/10",
+                "Console": "6.3/10"
+            }
+        },
+        "general_reception": "Received mostly negative reviews, especially for console and PC versions. Critics cited short length, repetitive gameplay, and lack of Christian Bale's voice acting."
+    }
+}
