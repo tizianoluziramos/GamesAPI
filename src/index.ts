@@ -6,6 +6,7 @@ import TheElderScrollsVSkyrim from "./APIS/The Elder Scrolls V Skyrim/";
 import "./config/.env.loader";
 import index from "./routes";
 import localtunnel from "localtunnel";
+import { getPublicIP } from "./config/getPublicIp";
 
 // 🛡️ Middlewares
 import resetApiUsage from "./middlewares/api_key.middleware";
@@ -50,6 +51,7 @@ class Server {
   public async start(): Promise<void> {
     this.app.listen(this.port, async () => {
       console.log(`🚀 Servidor corriendo en puerto ${this.port}`);
+      getPublicIP();
 
       const tunnel = await localtunnel({
         port: Number(this.port),
