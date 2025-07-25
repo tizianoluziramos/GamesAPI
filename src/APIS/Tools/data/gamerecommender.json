@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "The Witcher 3: Wild Hunt",
+    "genre": "RPG",
+    "difficulty": 7,
+    "popularity": 10,
+    "duration": 100,
+    "description": "An open-world RPG where Geralt searches for his adopted daughter amidst political intrigue and monsters."
+  },
+  {
+    "id": 2,
+    "title": "Minecraft",
+    "genre": "Sandbox",
+    "difficulty": 3,
+    "popularity": 10,
+    "duration": 200,
+    "description": "A sandbox game that lets players build and explore infinite worlds made of blocks."
+  },
+  {
+    "id": 3,
+    "title": "Dark Souls III",
+    "genre": "Action",
+    "difficulty": 9,
+    "popularity": 8,
+    "duration": 50,
+    "description": "A challenging action RPG known for its tough enemies and intricate world design."
+  },
+  {
+    "id": 4,
+    "title": "Celeste",
+    "genre": "Platformer",
+    "difficulty": 8,
+    "popularity": 7,
+    "duration": 15,
+    "description": "A platformer focusing on climbing a mountain while tackling tough challenges and emotional storytelling."
+  },
+  {
+    "id": 5,
+    "title": "Stardew Valley",
+    "genre": "Simulation",
+    "difficulty": 2,
+    "popularity": 9,
+    "duration": 80,
+    "description": "A farming simulator with RPG elements and community building."
+  },
+  {
+    "id": 6,
+    "title": "Hollow Knight",
+    "genre": "Metroidvania",
+    "difficulty": 7,
+    "popularity": 8,
+    "duration": 40,
+    "description": "Explore a vast underground kingdom filled with challenging enemies and secrets."
+  },
+  {
+    "id": 7,
+    "title": "Overwatch",
+    "genre": "Shooter",
+    "difficulty": 5,
+    "popularity": 9,
+    "duration": 30,
+    "description": "A team-based multiplayer shooter with diverse heroes and abilities."
+  },
+  {
+    "id": 8,
+    "title": "Slay the Spire",
+    "genre": "Roguelike",
+    "difficulty": 6,
+    "popularity": 7,
+    "duration": 30,
+    "description": "A card-based roguelike blending strategy and deckbuilding."
+  },
+  {
+    "id": 9,
+    "title": "Portal 2",
+    "genre": "Puzzle",
+    "difficulty": 4,
+    "popularity": 9,
+    "duration": 10,
+    "description": "A puzzle platformer using a portal gun to solve physics-based challenges."
+  },
+  {
+    "id": 10,
+    "title": "Mario Party 10",
+    "genre": "Party",
+    "difficulty": 3,
+    "popularity": 8,
+    "duration": 8,
+    "description": "A fun party game with various mini-games for multiple players."
+  }
+]

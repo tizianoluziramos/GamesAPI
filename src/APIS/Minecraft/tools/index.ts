@@ -1,10 +1,10 @@
 import { Router } from "express";
-import indexRoute from "./routes/index.route";
 import status from "./routes/status.route";
+import index from "./routes/index.route";
 
 const tools = Router();
 
-tools.use("/", indexRoute);
+tools.use("/", index);
 tools.use("/status", status);
 
 export default tools;

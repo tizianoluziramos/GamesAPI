@@ -6,7 +6,7 @@ class indexController {
   };
   public static info: RequestHandler | any = async (req: Request, res: Response) => {
     return res.json({
-      routes: ["papersplease", "minecraft", "terminatorsalvation", "theelderscrollsvskyrim"],
+      routes: ["papersplease", "minecraft", "terminatorsalvation", "theelderscrollsvskyrim", "tools"],
     });
   };
 }

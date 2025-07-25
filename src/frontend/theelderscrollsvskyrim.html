@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Elder Scrolls V Skyrim API Explorer</title>
+    <link rel="shortcut icon" href="theelderscrollsvskyrim.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="./theelderscrollsvskyrim.css" />
+  </head>
+  <body>
+    <h1>The Elder Scrolls V Skyrim API Explorer</h1>
+    <div class="main-container">
+      <div class="sections-container">
+        <section>
+          <h2>Characters</h2>
+          <button id="btn-characters-all">Ver todos</button>
+          <label>
+            Página ID:
+            <input type="number" id="input-characters-pageid" min="1" />
+          </label>
+          <button id="btn-characters-pageid">Buscar por Página</button>
+        </section>
+
+        <section>
+          <h2>Locations</h2>
+          <button id="btn-locations-all">Ver todos</button>
+          <button id="btn-locations-locs">Ver locations</button>
+          <button id="btn-locations-images">Ver images</button>
+          <button id="btn-locations-links">Ver external links</button>
+        </section>
+
+        <section>
+          <h2>Quests</h2>
+          <button id="btn-quests-all">Ver todos</button>
+          <label>
+            Nombre:
+            <input type="text" id="input-quests-name" />
+          </label>
+          <button id="btn-quests-name">Buscar por nombre</button>
+          <br />
+          <label>
+            Location:
+            <input type="text" id="input-quests-location" />
+          </label>
+          <button id="btn-quests-location">Filtrar por location</button>
+          <br />
+          <label>
+            Hold:
+            <input type="text" id="input-quests-hold" />
+          </label>
+          <button id="btn-quests-hold">Filtrar por hold</button>
+        </section>
+
+        <section>
+          <h2>Weapons</h2>
+          <button id="btn-weapons-all">Ver todos</button>
+          <label>
+            Lenguaje:
+            <input type="text" id="input-weapons-lang" placeholder="e.g. english" />
+          </label>
+          <button id="btn-weapons-lang">Buscar por lenguaje</button>
+          <br />
+          <label>
+            Nombre:
+            <input type="text" id="input-weapons-name" placeholder="Nombre arma" />
+          </label>
+          <button id="btn-weapons-name">Buscar por nombre</button>
+        </section>
+      </div>
+      <div id="output">Resultados aparecerán aquí...</div>
+    </div>
+
+    <script src="./theelderscrollsvskyrim.js"></script>
+  </body>
+</html>

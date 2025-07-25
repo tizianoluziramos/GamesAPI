@@ -3,12 +3,14 @@ import cors from "cors";
 import compression from "compression";
 import helmet from "helmet";
 import localtunnel from "localtunnel";
+import path from "path";
 
 import PapersPleaseAPI from "./APIS/Papers Please/routes";
 import MinecraftAPI from "./APIS/Minecraft";
 import TerminatorSalvationAPI from "./APIS/Terminator - Salvation/routes/index";
 import TheElderScrollsVSkyrim from "./APIS/The Elder Scrolls V Skyrim/";
 import index from "./routes";
+import tools from "./APIS/Tools/";
 
 import "./config/.env.loader";
 import { getPublicIP } from "./config/getPublicIp";
@@ -34,23 +36,23 @@ class Server {
     this.app.use(express.json());
     this.app.use(compression());
     this.app.use(helmet());
-
+    this.app.use("/", express.static(path.join(__dirname, "./frontend")));
     if (process.env.ENVIRONMENT === "Production") {
-      this.app.use(requireApiKey);
+      this.app.use("/api", requireApiKey);
     }
   }
 
   private loadRoutes(): void {
-    this.app.use("/papersplease", PapersPleaseAPI);
-    this.app.use("/minecraft", MinecraftAPI);
-    this.app.use("/terminatorsalvation", TerminatorSalvationAPI);
-    this.app.use("/theelderscrollsvskyrim", TheElderScrollsVSkyrim);
+    this.app.use("/api", index);
+    this.app.use("/api/tools", tools);
+    this.app.use("/api/papersplease", PapersPleaseAPI);
+    this.app.use("/api/minecraft", MinecraftAPI);
+    this.app.use("/api/terminatorsalvation", TerminatorSalvationAPI);
+    this.app.use("/api/theelderscrollsvskyrim", TheElderScrollsVSkyrim);
 
     if (process.env.ENVIRONMENT === "Production") {
       this.app.use("/reset-usage", resetApiUsage);
     }
-
-    this.app.use("/", index);
   }
 
   public async start(): Promise<void> {

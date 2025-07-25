@@ -58,9 +58,7 @@ export function requireApiKey(req: Request, res: Response, next: NextFunction) {
   });
 
   if (!hasAccess) {
-    res
-      .status(403)
-      .json({ error: "API_KEY does not have access to this route" });
+    res.status(403).json({ error: "API_KEY does not have access to this route" });
     return;
   }
 
