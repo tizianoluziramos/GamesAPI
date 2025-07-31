@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Test Chamber Wall",
+    "description": "Standard wall of the testing environment.",
+    "interactable": false,
+    "portalSurface": true
+  },
+  {
+    "name": "Observation Room Window",
+    "description": "Windows where scientists observe the test chamber.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Glass Wall",
+    "description": "Transparent barrier that blocks portal placement.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Metal Wall",
+    "description": "Metallic surface that cannot hold portals.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Portal Surface Panel",
+    "description": "White panel that allows portal placement.",
+    "interactable": false,
+    "portalSurface": true
+  },
+  {
+    "name": "Elevator Platform",
+    "description": "Platform that transports the player between chambers.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Moving Platform",
+    "description": "Platform that moves automatically or through logic.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Energy Pellet Launcher",
+    "description": "Launches an energy pellet that must reach a catcher.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Energy Pellet Catcher",
+    "description": "Receives the energy pellet to activate mechanisms.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Door",
+    "description": "Door that opens when a condition is met.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Timed Door",
+    "description": "Door that stays open for a limited time after activation.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Floor Button",
+    "description": "Pressure plate that activates when weighted.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Wall Button",
+    "description": "Push button on the wall that triggers mechanisms.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Elevator Shaft",
+    "description": "Vertical structure containing the elevator.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Exit Elevator",
+    "description": "Elevator that takes the player out of the test chamber.",
+    "interactable": true,
+    "portalSurface": false
+  },
+  {
+    "name": "Radio",
+    "description": "Environmental object that plays audio. Not a functional item.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Turret Base",
+    "description": "Static base or zone where a turret is placed.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Security Camera",
+    "description": "Fixed camera observing the player. Can be knocked off.",
+    "interactable": false,
+    "portalSurface": false
+  },
+  {
+    "name": "Warning Sign",
+    "description": "Informational signs within the chamber.",
+    "interactable": false,
+    "portalSurface": false
+  }
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FNAF 1 API</title>
+    <link rel="stylesheet" href="fnaf1.css" />
+    <link rel="shortcut icon" href="fnaf1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="game-clock"></div>
+    <h1>FNAF 1 API</h1>
+    <button id="btnToggleSound">🔊 Unmute</button>
+
+    <div class="buttons">
+      <button id="btnAll">Reset</button>
+      <button id="btnCharacters">Characters</button>
+      <button id="btnGameInfo">Game Info</button>
+      <button id="btnLocations">Locations</button>
+      <button id="btnPowerOff">Easter Egg</button>
+      <button id="btnGame">Run game</button>
+    </div>
+
+    <div class="search">
+      <input id="searchName" type="text" placeholder="Search character by name" />
+      <button id="btnSearch">Search</button>
+    </div>
+
+    <div id="copy-notification"></div>
+    <div id="preloader" class="preloader" style="display: none">
+      <div class="loader"></div>
+    </div>
+
+    <div id="output"></div>
+    <div id="jumpscare" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: black; z-index: 9999">
+      <video id="jumpscareVideo" src="freddyjumpscare.mp4" style="width: 100%; height: 100%" preload="auto"></video>
+    </div>
+    <div id="noise-meter">
+      <div id="noise-level"></div>
+    </div>
+    <audio id="ambientAudio" loop muted autoplay>
+      <source src="ambient.mp3" type="audio/mp3" />
+    </audio>
+    <script src="./fnaf1.js"></script>
+  </body>
+</html>

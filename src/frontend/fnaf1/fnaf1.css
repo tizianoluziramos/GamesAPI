@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #ff1a1a #3a0a0a;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at center, #2a0a0a 0%, #1a0707 80%);
+  color: #ff6b6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem 2rem;
+  text-shadow: 0 0 8px #ff3b3b88;
+  background-image: url("./fnaf1background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+body.power-down {
+  filter: grayscale(100%) brightness(15%);
+  transition: filter 1s ease;
+}
+
+body.power-down h1,
+body.power-down .card,
+body.power-down button,
+body.power-down input {
+  color: #111 !important;
+  text-shadow: none !important;
+}
+
+body.power-down::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9998;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ff4c4c;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 20px #ff0000, 0 0 30px #cc0000, 0 0 40px #aa0000;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: 2px solid #ff1a1a;
+  background-color: #330000;
+  color: #ff6666;
+  cursor: pointer;
+  box-shadow: 0 0 8px #ff0000, inset 0 0 10px #ff4c4c;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #ff0000;
+  color: #fff;
+  box-shadow: 0 0 15px #ff1a1a, inset 0 0 20px #ff6666;
+}
+
+.search {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 520px;
+}
+
+input#searchName {
+  flex-grow: 1;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  border: 2px solid #ff1a1a;
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: 0 0 8px #ff0000;
+  background-color: #220000;
+  color: #ffbbbb;
+  transition: box-shadow 0.25s ease;
+  text-shadow: 0 0 5px #ff6666;
+}
+
+input#searchName::placeholder {
+  color: #aa4444;
+  font-style: italic;
+  user-select: none;
+}
+
+input#searchName:focus {
+  outline: none;
+  box-shadow: 0 0 15px #ff4444;
+  background-color: #330000;
+  color: #fff;
+}
+
+#output {
+  max-width: 900px;
+  width: 100%;
+  color: #ffb3b3;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  text-shadow: 0 0 4px #ff3b3b;
+}
+#output::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(transparent 0 2px, rgba(0, 0, 0, 0.2) 2px 4px);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  animation: flicker 0.15s infinite alternate;
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  color: #ff4444;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #ff2222, 0 0 12px #ff2222;
+}
+
+/* Card style for Characters, GameInfo, Locations */
+.card {
+  background-color: #330000;
+  border-radius: 16px;
+  box-shadow: 0 0 12px #ff0000, inset 0 0 20px #660000;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.75rem;
+  color: #ffc1c1;
+  line-height: 1.4;
+  border: 1px solid #ff4444;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #ff5555, inset 0 0 25px #aa0000;
+}
+
+.card .title {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #ff3b3b;
+  text-shadow: 0 0 8px #ff0000, 0 0 15px #ff1111;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.card .subtitle {
+  margin-top: 1.2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ff6666;
+  text-shadow: 0 0 6px #ff4444;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+  margin: 0.4rem 0 1rem 0;
+}
+
+.card ul li {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #ffbfbf;
+  text-shadow: 0 0 3px #ff9999;
+}
+
+/* Scrollbar base */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #2a0a0a; /* fondo oscuro */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a0a0a;
+  box-shadow: inset 0 0 5px #7f0000;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Scrollbar thumb con "ojos" animados */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff0000, #b30000);
+  border-radius: 10px;
+  box-shadow: 0 0 8px #ff1a1a, inset 0 0 6px #ff6666;
+  border: 2px solid #3a0a0a;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+/* Ojos rojos - antes del contenido */
+::-webkit-scrollbar-thumb::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 4px;
+  height: 4px;
+  background: #ff0000;
+  border-radius: 50%;
+  box-shadow: 8px 0 #ff0000; /* segundo ojo */
+  animation: blink 3s infinite;
+  filter: drop-shadow(0 0 4px #ff0000);
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+  0%,
+  20%,
+  100% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.2;
+  }
+}
+
+::selection {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff4c4c, #ff0000);
+  box-shadow: 0 0 12px #ff4444, inset 0 0 8px #ff8888;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 15, 15, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #3a1e1e;
+  border-top: 8px solid #ef6666;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 15px #ef6666;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .buttons,
+  .search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  button,
+  input#searchName {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+#copy-notification {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff3333cc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff0000aa;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+#copy-notification.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#game-clock {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  font-family: "Orbitron", monospace, monospace;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #ff4c4c;
+  text-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 20px #ff0000;
+  padding: 6px 12px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  user-select: none;
+  z-index: 10000;
+  min-width: 80px;
+  text-align: center;
+  animation: flickerGameClock 1.5s infinite;
+}
+
+#btnToggleSound {
+  position: fixed;
+  bottom: 85%;
+  right: 90%;
+  z-index: 1000;
+  font-size: 2.5vw;
+  padding: 0.5vw 1vw;
+  min-width: 50px;
+  min-height: 30px;
+  cursor: pointer;
+  transform: scale(0.5);
+  transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+@keyframes flickerGameClock {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+#noise-meter {
+  width: 300px;
+  height: 20px;
+  background: #330000;
+  border: 2px solid #ff1a1a;
+  box-shadow: 0 0 10px #ff0000;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+
+#noise-level {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00ff00, #ffff00, #ff0000);
+  transition: width 0.1s linear;
+}

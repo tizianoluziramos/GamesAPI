@@ -1,0 +1,37 @@
+{
+  "id": 1,
+  "title": "Five Nights at Freddy's",
+  "release_year": 2014,
+  "developer": "Scott Cawthon",
+  "publisher": "Scott Cawthon",
+  "genre": ["Survival Horror", "Point-and-Click"],
+  "platforms": ["PC", "Android", "iOS", "PlayStation", "Xbox", "Nintendo Switch"],
+  "description": "The original game where you work as a night guard at Freddy Fazbear's Pizza and must survive five nights avoiding the animatronics.",
+  "game_modes": ["Single Player", "Night-based progression"],
+  "difficulty": {
+    "nights": 5,
+    "difficulty_scale": "Progressively harder each night"
+  },
+  "technical": {
+    "engine": "Clickteam Fusion 2.5",
+    "original_resolution": "1024x768",
+    "approx_size": "200 MB",
+    "frame_rate": "30 FPS",
+    "file_formats": [".exe", ".apk", ".ipa"]
+  },
+  "ports": [
+    {
+      "platform": "Android",
+      "release_year": 2014
+    },
+    {
+      "platform": "iOS",
+      "release_year": 2014
+    },
+    {
+      "platform": "Console Collection",
+      "release_year": 2019
+    }
+  ],
+  "achievements": ["Survive Night 1", "Complete all 5 Nights"]
+}

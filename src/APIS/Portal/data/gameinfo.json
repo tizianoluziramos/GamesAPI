@@ -1,0 +1,20 @@
+{
+  "title": "Portal",
+  "developer": "Valve",
+  "publisher": "Valve",
+  "release_date": {
+    "worldwide": "2007-10-10",
+    "regions": {
+      "NA": "2007-10-09",
+      "EU": "2007-10-10",
+      "JP": "2008-05-21"
+    }
+  },
+  "platforms": ["PC", "Mac OS X", "Xbox 360", "PlayStation 3", "Linux", "Nintendo Switch (Portal: Companion Collection)"],
+  "modes": ["Singleplayer"],
+  "genre": ["Puzzle", "First-Person", "Physics"],
+  "description": "Portal is a first-person puzzle-platform game developed and published by Valve. The player must solve puzzles by creating portals to move objects and themselves through space. The game is set in the Aperture Science Enrichment Center and is known for its unique gameplay mechanics, dark humor, and the AI character GLaDOS.",
+  "engine": "Source Engine",
+  "series": "Portal",
+  "languages": ["English", "Spanish", "French", "German", "Italian", "Russian", "Japanese", "Portuguese"]
+}

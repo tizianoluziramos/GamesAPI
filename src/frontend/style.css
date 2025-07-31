@@ -12,6 +12,10 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 2rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -74,4 +78,262 @@ footer {
   border-radius: 10px 10px 0 0; /* bordes arriba redondeados */
   display: block;
   margin-bottom: 1rem;
+}
+
+.fnaf1-theme {
+  background-color: #330000;
+  color: #ff6b6b;
+  border: 1px solid #ff4444;
+  box-shadow: 0 0 12px #ff0000, inset 0 0 20px #660000;
+  text-shadow: 0 0 8px #ff3b3b;
+  font-family: "Orbitron", sans-serif;
+}
+
+.fnaf1-theme:hover {
+  background-color: #440000;
+  box-shadow: 0 0 20px #ff5555, inset 0 0 25px #aa0000;
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+
+.fnaf1-theme h2 {
+  color: #ff3b3b;
+  text-shadow: 0 0 8px #ff0000, 0 0 15px #ff1111;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.fnaf1-theme p {
+  color: #ffc1c1;
+  text-shadow: 0 0 4px #ff3b3b;
+}
+
+.minecraft-theme {
+  background-color: #003300; /* verde oscuro */
+  color: #a6f0a6; /* verde claro */
+  border: 1px solid #33cc33;
+  box-shadow: 0 0 12px #33cc33, inset 0 0 20px #006600;
+  text-shadow: 0 0 8px #33cc33;
+  font-family: "Orbitron", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.minecraft-theme:hover {
+  background-color: #005500;
+  box-shadow: 0 0 20px #55ff55, inset 0 0 25px #009900;
+  transform: scale(1.02);
+}
+
+.minecraft-theme h2 {
+  color: #66ff66;
+  text-shadow: 0 0 8px #00cc00, 0 0 15px #00aa00;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.minecraft-theme p {
+  color: #b3ffb3;
+  text-shadow: 0 0 4px #66cc66;
+}
+
+.papersplease-theme {
+  background-color: #000000; /* fondo negro puro */
+  color: #ddd; /* texto gris claro para contraste */
+  border: 2px solid #0a0a0a; /* borde negro muy oscuro, casi imperceptible pero distinto */
+  box-shadow: 0 0 12px #111111, inset 0 0 20px #050505; /* sombras muy sutiles en negro */
+  text-shadow: 0 0 6px #333333; /* sombra gris oscuro suave en texto */
+  font-family: "Orbitron", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.papersplease-theme:hover {
+  background-color: #0d0d0d; /* un poco menos negro para el hover */
+  box-shadow: 0 0 20px #222222, inset 0 0 25px #111111;
+  transform: scale(1.02);
+}
+
+.papersplease-theme h2 {
+  color: #bbbbbb; /* gris claro para títulos */
+  text-shadow: 0 0 8px #222222; /* sombra negra suave */
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.papersplease-theme p {
+  color: #ccc;
+  text-shadow: 0 0 4px #111111;
+}
+
+.skyrim-theme {
+  background-color: #1c1c1c; /* gris oscuro metálico */
+  color: #cce0ff; /* azul hielo para texto */
+  border: 1px solid #3a3a3a;
+  box-shadow: 0 0 12px #99bbff55, inset 0 0 20px #0f1a2a;
+  text-shadow: 0 0 6px #99bbff55;
+  font-family: "Cinzel", serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skyrim-theme:hover {
+  background-color: #2a2a2a; /* un poco más claro al hover */
+  box-shadow: 0 0 20px #aaccee88, inset 0 0 25px #112233;
+  transform: scale(1.02);
+}
+
+.skyrim-theme h2 {
+  color: #aaccff;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: "Cinzel", serif;
+}
+
+.skyrim-theme p {
+  color: #dde6f2;
+}
+
+.terminator-theme {
+  background-color: #0a0a0a; /* negro metálico oscuro */
+  color: #ff1a1a; /* rojo sangre intenso */
+  border: 1px solid #1a1a1a; /* borde negro más oscuro */
+  box-shadow: 0 0 12px #ff000055, inset 0 0 20px #111111;
+  text-shadow: 0 0 6px #ff1111;
+  font-family: "Orbitron", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.terminator-theme:hover {
+  background-color: #151515; /* gris metálico oscuro para hover */
+  box-shadow: 0 0 20px #ff000088, inset 0 0 25px #222222;
+  transform: scale(1.03);
+}
+
+.terminator-theme h2 {
+  color: #ff0000; /* rojo vivo */
+  text-shadow: 0 0 8px #ff0000, 0 0 15px #cc0000;
+  letter-spacing: 2px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.terminator-theme p {
+  color: #cccccc; /* gris claro acero */
+  text-shadow: 0 0 4px #ff222222;
+}
+
+.terminator-theme img.card-img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff000033;
+}
+
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: opacity 0.4s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.background-layer.visible {
+  opacity: 1;
+}
+
+.gamesdb-theme {
+  background: linear-gradient(145deg, #064663, #0c5e72);
+  color: #e0f2f1;
+  border: 1.5px solid #0a7881;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(6, 70, 99, 0.6), inset 0 0 10px #0a7881;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.gamesdb-theme:hover {
+  background: linear-gradient(145deg, #0a7881, #096d79);
+  box-shadow: 0 6px 20px rgba(10, 120, 129, 0.9), inset 0 0 15px #0c9ea3;
+  transform: scale(1.03);
+}
+
+.gamesdb-theme h2 {
+  color: #b2dfdb;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-top: 0;
+  font-size: 1.6rem;
+  text-shadow: 0 0 6px #4db6ac;
+}
+
+.gamesdb-theme p {
+  color: #cde7e4;
+  font-size: 1rem;
+  text-shadow: 0 0 3px #4db6ac;
+  margin-top: 0.5rem;
+}
+
+.portal1-theme {
+  background: radial-gradient(circle at center, #1a2733 0%, #0d141a 100%);
+  color: #e6f2ff; /* texto blanco-azulado */
+  border: 1px solid #1f2e3a;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 153, 255, 0.25), inset 0 0 20px rgba(0, 40, 60, 0.4);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.portal1-theme:hover {
+  background: radial-gradient(circle at center, #223344 0%, #0f1820 100%);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4), inset 0 0 25px rgba(0, 60, 90, 0.5);
+  transform: scale(1.03);
+}
+
+.portal1-theme h2 {
+  color: #33ccff; /* azul portal */
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 0;
+  font-size: 1.6rem;
+  text-shadow: 0 0 8px rgba(0, 200, 255, 0.7), 0 0 15px rgba(0, 150, 255, 0.4);
+}
+
+.portal1-theme p {
+  color: #a8c6e0; /* gris azulado suave */
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 4px rgba(0, 80, 120, 0.4);
+}
+
+.portal1-theme .card-img {
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 50, 80, 0.6);
+}
+
+/* Borde brillante como el portal */
+.portal1-theme::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 200, 255, 0.5);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
+  opacity: 0.7;
+  pointer-events: none;
 }

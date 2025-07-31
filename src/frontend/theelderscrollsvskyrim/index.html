@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Elder Scrolls V Skyrim API</title>
+    <link rel="shortcut icon" href="theelderscrollsvskyrim.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="./theelderscrollsvskyrim.css" />
+  </head>
+  <body>
+    <h1>The Elder Scrolls V Skyrim</h1>
+    <div class="main-container">
+      <div class="sections-container">
+        <section>
+          <h2>Characters</h2>
+          <button id="btn-characters-all">View all</button>
+          <label>
+            Page ID:
+            <input type="number" id="input-characters-pageid" min="1" />
+          </label>
+          <button id="btn-characters-pageid">Search by Page</button>
+        </section>
+
+        <section>
+          <h2>Locations</h2>
+          <button id="btn-locations-all">View all</button>
+          <button id="btn-locations-locs">View locations</button>
+          <button id="btn-locations-images">View images</button>
+          <button id="btn-locations-links">View external links</button>
+        </section>
+
+        <section>
+          <h2>Quests</h2>
+          <button id="btn-quests-all">View all</button>
+          <label>
+            Name:
+            <input type="text" id="input-quests-name" />
+          </label>
+          <button id="btn-quests-name">Search by name</button>
+          <br />
+          <label>
+            Location:
+            <input type="text" id="input-quests-location" />
+          </label>
+          <button id="btn-quests-location">Filter by location</button>
+          <br />
+          <label>
+            Hold:
+            <input type="text" id="input-quests-hold" />
+          </label>
+          <button id="btn-quests-hold">Filter by hold</button>
+        </section>
+
+        <section>
+          <h2>Books</h2>
+          <button id="btn-books-all">View all</button>
+          <label>
+            Title:
+            <input type="text" id="input-books-title" />
+          </label>
+          <button id="btn-books-title">Search by title</button>
+          <br />
+          <label>
+            Author:
+            <input type="text" id="input-books-author" />
+          </label>
+          <button id="btn-books-author">Filter by author</button>
+          <br />
+        </section>
+
+        <section>
+          <h2>Spells</h2>
+          <button id="btn-spells-all">View all</button>
+          <label>
+            Name:
+            <input type="text" id="input-spells-name" />
+          </label>
+          <button id="btn-spells-name">Search by name</button>
+          <br />
+          <label>
+            School:
+            <input type="text" id="input-spells-school" />
+          </label>
+          <button id="btn-spells-school">Filter by school</button>
+          <br />
+        </section>
+
+        <section>
+          <h2>Weapons</h2>
+          <button id="btn-weapons-all">View all</button>
+          <label>
+            Language:
+            <input type="text" id="input-weapons-lang" placeholder="e.g. english" />
+          </label>
+          <button id="btn-weapons-lang">Search by language</button>
+          <br />
+          <label>
+            Name:
+            <input type="text" id="input-weapons-name" placeholder="Weapon name" />
+          </label>
+          <button id="btn-weapons-name">Search by name</button>
+        </section>
+
+        <section>
+          <h2>Interactive Map</h2>
+          <iframe src="https://mapgenie.io/skyrim/maps/skyrim?embed=light" height="500" style="position: relative; width: 100%; border: none; border-radius: 10px"> </iframe>
+        </section>
+      </div>
+      <div id="output">Results will appear here...</div>
+    </div>
+
+    <script src="./theelderscrollsvskyrim.js"></script>
+  </body>
+</html>

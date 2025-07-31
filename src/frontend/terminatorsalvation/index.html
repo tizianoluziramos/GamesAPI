@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Terminator Salvation API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="terminatorsalvation.css" />
+    <link rel="shortcut icon" href="terminatorsalvation.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <button id="muteBtn">🔇 Unmute</button>
+      </div>
+      <h1>Terminator Salvation API</h1>
+      <p>Explore all available endpoints dynamically</p>
+    </header>
+
+    <main>
+      <div class="container" id="api-sections"></div>
+
+      <pre id="output">Select an endpoint to see its response here...</pre>
+    </main>
+
+    <audio id="backgroundmusic" autoplay loop muted src="./terminatorsalvation-background.mp3"></audio>
+
+    <script src="./terminatorsalvation.js"></script>
+  </body>
+</html>

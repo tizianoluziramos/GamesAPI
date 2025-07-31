@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Freddy Fazbear",
+    "role": "Main antagonist",
+    "type": "Animatronic",
+    "description": "The lead singer and mascot of Freddy Fazbear's Pizza. Becomes more active in later nights.",
+    "behavior": "Approaches through the right hallway, mostly at night 3-5.",
+    "appearance": {
+      "color": "Brown",
+      "eyes": "Blue",
+      "height_cm": 183
+    },
+    "voice_lines": ["You won't get away with this!", "I'm coming for you."],
+    "jumpscare": {}
+  },
+  {
+    "id": 2,
+    "name": "Bonnie",
+    "role": "Antagonist",
+    "type": "Animatronic",
+    "description": "The purple animatronic rabbit who plays guitar. Very active from the start.",
+    "behavior": "Moves through the left hallway, frequent early night visits.",
+    "appearance": {
+      "color": "Purple",
+      "eyes": "Red",
+      "height_cm": 175
+    },
+    "voice_lines": ["Let's play a game.", "You can't hide forever."],
+    "jumpscare": {}
+  },
+  {
+    "id": 3,
+    "name": "Chica",
+    "role": "Antagonist",
+    "type": "Animatronic",
+    "description": "The yellow chicken animatronic who loves pizza. Moves through the right hallway.",
+    "behavior": "Appears mostly in the kitchen and right hallway.",
+    "appearance": {
+      "color": "Yellow",
+      "eyes": "Orange",
+      "height_cm": 170
+    },
+    "voice_lines": ["Let's eat!", "I'm coming for you."],
+    "jumpscare": {}
+  },
+  {
+    "id": 4,
+    "name": "Foxy",
+    "role": "Antagonist",
+    "type": "Animatronic",
+    "description": "The animatronic fox hiding in Pirate Cove. Runs down the hallway if left unchecked.",
+    "behavior": "Sprints towards the office if Pirate Cove camera is neglected.",
+    "appearance": {
+      "color": "Red",
+      "eyes": "Green",
+      "height_cm": 180
+    },
+    "voice_lines": ["Yarr!", "You can't catch me!"],
+    "jumpscare": {}
+  },
+  {
+    "id": 5,
+    "name": "Golden Freddy",
+    "role": "Easter Egg",
+    "type": "Animatronic",
+    "description": "A ghostly version of Freddy that appears randomly and can crash the game.",
+    "behavior": "Appears suddenly in the office, teleporting and causing hallucinations.",
+    "appearance": {
+      "color": "Golden",
+      "eyes": "White",
+      "height_cm": 183
+    },
+    "voice_lines": [],
+    "jumpscare": {}
+  },
+  {
+    "id": 6,
+    "name": "Phone Guy",
+    "role": "Guide",
+    "type": "Human",
+    "description": "The former night guard who leaves recorded messages to help the player.",
+    "behavior": "Provides tips and lore through phone calls.",
+    "appearance": {
+      "color": "N/A",
+      "eyes": "N/A",
+      "height_cm": "N/A"
+    },
+    "voice_lines": ["Hello? Hello? Uh, I wanted to record a message for you to help you get settled in on your first night.", "Remember to conserve power by checking the cameras and doors sparingly."],
+    "jumpscare": null
+  }
+]

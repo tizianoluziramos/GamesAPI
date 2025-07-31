@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games Database</title>
+    <link rel="shortcut icon" href="gamesdatabase.png" type="image/x-icon" />
+    <link rel="stylesheet" href="gamesdatabase.css" />
+  </head>
+  <body>
+    <h1>Games Database</h1>
+
+    <div class="section" id="pagination-section">
+      <h2>List games</h2>
+      <label for="page">Page (>=1):</label><br />
+      <input type="number" id="page" value="1" min="1" /><br />
+      <label for="pageSize">Page size (1-100):</label><br />
+      <input type="number" id="pageSize" value="10" min="1" max="100" /><br />
+      <button id="loadPageBtn">Load page</button>
+      <div id="pagination-results"></div>
+    </div>
+
+    <div class="section" id="search-section">
+      <h2>Search by name</h2>
+      <input type="text" id="searchName" placeholder="Write a name to search..." />
+      <button id="searchBtn">Search</button>
+      <div id="search-results"></div>
+    </div>
+
+    <div class="section" id="total-section">
+      <h2>Total of games</h2>
+      <button id="totalBtn">Obtain total</button>
+      <div id="total-result"></div>
+    </div>
+
+    <div class="section" id="sid-section">
+      <h2>Search game by SID</h2>
+      <input type="number" id="sidInput" placeholder="Write SID..." />
+      <button id="sidBtn">Buscar</button>
+      <div id="sid-result"></div>
+    </div>
+    <button id="clearAllBtn">Clear everything</button>
+
+    <script src="./gamesdatabase.js"></script>
+  </body>
+</html>

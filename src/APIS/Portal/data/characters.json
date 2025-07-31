@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Chell",
+        "role": "Protagonist",
+        "description": "The silent test subject controlled by the player. Chell navigates the Aperture Science testing facility using the portal gun."
+    },
+    {
+        "name": "GLaDOS",
+        "role": "Antagonist",
+        "description": "An artificial intelligence overseeing the test chambers. GLaDOS begins as a helpful guide but gradually reveals a sinister and manipulative personality."
+    },
+    {
+        "name": "Aperture Science Personality Cores",
+        "role": "Supporting Characters",
+        "description": "Small, spherical AI modules attached to GLaDOS. Each core represents a specific personality trait or function, including the Morality Core, Curiosity Core, and Anger Core."
+    },
+    {
+        "name": "Weighted Companion Cube",
+        "role": "Object with Character-Like Role",
+        "description": "A weighted storage cube given to the player during one of the test chambers. GLaDOS encourages an emotional attachment to it before instructing Chell to destroy it."
+    }
+]
