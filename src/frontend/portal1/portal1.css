@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #0b0f1a;
+  background-color: #15233a;
   color: #d0e9ff;
   font-family: "Consolas", "Courier New", monospace;
   min-height: 100vh;
@@ -78,4 +78,45 @@ footer {
   margin-top: 3rem;
   font-size: 0.8rem;
   color: #3b607f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f1a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #63c7ff;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #63c7ff;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #91d6ff;
+  box-shadow: 0 0 10px #91d6ff;
+}
+
+::-webkit-scrollbar-corner {
+  background: #0b0f1a;
+}
+
+.logo-container {
+  width: fit-content;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 0 6px #63c7ff);
+  transform-origin: center;
+  transform: scale(2);
+  padding: 1rem;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
 }

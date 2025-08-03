@@ -81,8 +81,7 @@ main {
 
   #output {
     max-width: 100%;
-    border-left: none;
-    border-top: 2px solid #ff1a1a;
+    border: 2px solid #ff1a1a;
     min-height: 250px;
   }
 
@@ -221,4 +220,10 @@ body::before {
   position: absolute;
   top: 15px;
   left: 15px;
+}
+
+@media (max-width: 900px) {
+  #muteBtn {
+    display: none;
+  }
 }

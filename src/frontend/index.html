@@ -8,10 +8,22 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+      <div id="progress">0%</div>
+    </div>
+
     <div id="bg1" class="background-layer"></div>
     <div id="bg2" class="background-layer"></div>
 
     <h1>🛠️ Available Services</h1>
+
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search services..." />
+      <svg id="search-icon" viewBox="0 0 24 24">
+        <path d="M21 21l-4.35-4.35m2.2-5.9a7 7 0 1 1-14 0 7 7 0 0 1 14 0z" stroke="#33ccff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
     <div class="services">
       <a href="/gamerecommender/index.html">
         <div class="card">
@@ -62,9 +74,20 @@
           <p>The unique and the best Portal 1 API</p>
         </div>
       </a>
+      <a href="/undertale/index.html">
+        <div class="card undertale-theme">
+          <img src="/undertale/undertale.jpg" alt="Undertale" class="card-img" />
+          <h2>🎮 Undertale</h2>
+          <p>The unique and the best Undertale 1 API</p>
+        </div>
+      </a>
     </div>
 
-    <footer>Video Games API &copy; 2025</footer>
+    <footer>
+      <p>Video Games API &copy; 2025</p>
+      <nav><a href="https://tizianoluziramos.github.io">About me</a></nav>
+    </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>

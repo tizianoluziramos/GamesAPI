@@ -2,27 +2,25 @@ import express, { Application } from "express";
 import cors from "cors";
 import compression from "compression";
 import helmet from "helmet";
-import localtunnel from "localtunnel";
 import path from "path";
-
 import PapersPleaseAPI from "./APIS/Papers Please/routes";
 import MinecraftAPI from "./APIS/Minecraft";
 import TerminatorSalvationAPI from "./APIS/Terminator - Salvation/routes/index";
 import TheElderScrollsVSkyrim from "./APIS/The Elder Scrolls V Skyrim/";
 import PortalAPI from "./APIS/Portal";
-
+import UndertaleAPI from "./APIS/Undertale/routes/index.route";
 import FNAF from "./APIS/FNAF/";
 import index from "./routes";
 import tools from "./APIS/Tools/";
+import serveIndex from "serve-index";
 
 import "./config/.env.loader";
 import { getPublicIP } from "./config/getPublicIp";
 
-// Middlewares
 import resetApiUsage from "./middlewares/api_key.middleware";
 import { requireApiKey } from "./middlewares/apikey.middleware";
 
-const allowedOrigins = ["http://localhost:3000", "https://gamesapi.loca.lt"];
+const allowedOrigins = ["http://localhost:9090"];
 
 class Server {
   private app: Application;
@@ -40,7 +38,7 @@ class Server {
     this.app.use(
       cors({
         origin: function (origin, callback) {
-          if (!origin) return callback(null, true); // Permite herramientas tipo Postman
+          if (!origin) return callback(null, true);
           if (allowedOrigins.indexOf(origin) === -1) {
             return callback(new Error("Origen no permitido por CORS"), false);
           }
@@ -55,7 +53,8 @@ class Server {
         directives: {
           defaultSrc: ["'self'"],
           scriptSrc: ["'self'", "https://cdnjs.cloudflare.com", "'unsafe-inline'"],
-          styleSrc: ["'self'", "'unsafe-inline'"],
+          styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+          "font-src": ["'self'", "https://fonts.gstatic.com"],
           imgSrc: ["'self'", "data:", "https:", "blob:"],
           frameSrc: ["'self'", "https://mapgenie.io"],
           connectSrc: ["'self'", "blob:", "https://gamesapi.loca.lt", "http://localhost:3000"],
@@ -64,7 +63,7 @@ class Server {
       })
     );
 
-    this.app.use("/", express.static(path.join(__dirname, "./frontend")));
+    this.app.use("/", express.static(path.join(__dirname, "./frontend")), serveIndex(path.join(__dirname, "./frontend"), { icons: true }));
     if (process.env.ENVIRONMENT === "Production") {
       this.app.use("/api", requireApiKey);
     }
@@ -79,7 +78,7 @@ class Server {
     this.app.use("/api/theelderscrollsvskyrim", TheElderScrollsVSkyrim);
     this.app.use("/api/fnaf", FNAF);
     this.app.use("/api/portal", PortalAPI);
-
+    this.app.use("/api/undertale", UndertaleAPI);
     if (process.env.ENVIRONMENT === "Production") {
       this.app.use("/api/reset-usage", resetApiUsage);
     }
@@ -90,17 +89,6 @@ class Server {
       console.log(`🚀 Servidor corriendo en puerto ${this.port}`);
 
       getPublicIP();
-
-      const tunnel = await localtunnel({
-        port: Number(this.port),
-        subdomain: "gamesapi",
-      });
-
-      console.log(`🌐 Tu API está disponible públicamente en: ${tunnel.url}`);
-
-      tunnel.on("close", () => {
-        console.log("❌ Túnel cerrado");
-      });
     });
   }
 }
