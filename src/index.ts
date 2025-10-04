@@ -13,14 +13,12 @@ import FNAF from "./APIS/FNAF/";
 import index from "./routes";
 import tools from "./APIS/Tools/";
 import serveIndex from "serve-index";
-
 import "./config/.env.loader";
 import { getPublicIP } from "./config/getPublicIp";
-
 import resetApiUsage from "./middlewares/api_key.middleware";
 import { requireApiKey } from "./middlewares/apikey.middleware";
 
-const allowedOrigins = ["http://localhost:9090"];
+const allowedOrigins = ["http://localhost:9090", "http://192.168.1.168:9090"];
 
 class Server {
   private app: Application;
@@ -40,7 +38,7 @@ class Server {
         origin: function (origin, callback) {
           if (!origin) return callback(null, true);
           if (allowedOrigins.indexOf(origin) === -1) {
-            return callback(new Error("Origen no permitido por CORS"), false);
+            return callback(new Error("Origin not allowed by CORS"), false);
           }
           return callback(null, true);
         },
