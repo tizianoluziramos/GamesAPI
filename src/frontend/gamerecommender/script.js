@@ -19,29 +19,34 @@ async function getRecommendation() {
     return;
   }
 
-  resultDiv.textContent = "Searching for recomendation...";
+  resultDiv.textContent = "Searching for recommendation...";
 
   try {
-    const response = await fetch("/api/tools/gamerecommender", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ favoriteGames: titles }),
+    const query = titles.map((t) => `favoriteGames=${encodeURIComponent(t)}`).join("&");
+
+    const response = await fetch(`/api/tools/gamerecommender?${query}`, {
+      method: "GET",
     });
 
     if (!response.ok) {
-      const error = await response.json();
-      resultDiv.textContent = `Error: ${error.error || response.statusText}`;
+      const text = await response.text();
+      try {
+        const error = JSON.parse(text);
+        resultDiv.textContent = `Error: ${error.error || response.statusText}`;
+      } catch {
+        resultDiv.textContent = `Server error: ${response.status} ${response.statusText}`;
+      }
       return;
     }
 
     const data = await response.json();
+    console.log("API response:", data);
+
     const game = data.recommendation;
-    const score = data.similarityScore.toFixed(3);
+    const score = data.diagnostics?.finalScore !== undefined ? data.diagnostics.finalScore.toFixed(3) : "N/A";
 
     resultDiv.innerHTML = `
-      <h3>🎮 Recomendation: ${game.title}</h3>
+      <h3>🎮 Recommendation: ${game.title}</h3>
       <p><strong>Genre:</strong> ${game.genre}</p>
       <p><strong>Difficulty:</strong> ${game.difficulty}</p>
       <p><strong>Popularity:</strong> ${game.popularity}</p>
@@ -50,7 +55,7 @@ async function getRecommendation() {
       <p><strong>Score of similarity:</strong> ${score}</p>
     `;
   } catch (err) {
-    resultDiv.textContent = "500 Internal Server Error.";
+    resultDiv.textContent = "Unexpected client-side error.";
     console.error(err);
   }
 }

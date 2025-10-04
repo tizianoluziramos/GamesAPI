@@ -12,9 +12,10 @@ class gamerecommender {
     const data = await this.readData();
     return data;
   }
-  public async findByTitle(title: string): Promise<Game | undefined> {
+  public async findByTitle(title: string): Promise<Game | null> {
     const games = await this.readData();
-    return games.find((g) => g.title.toLowerCase() === title.toLowerCase());
+    const normalized = title.toLowerCase().replace(/[^a-z0-9]/g, "");
+    return games.find((g) => g.title.toLowerCase().replace(/[^a-z0-9]/g, "") === normalized) || null;
   }
 }
 
