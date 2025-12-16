@@ -1,0 +1,42 @@
+import { Router } from "express";
+import attributes from "./attributes.route";
+import biomes from "./biomes.route";
+import blockColissionShapes from "./blockColissionShapes.route";
+import blocks from "./blocks.route";
+import effects from "./effects.route";
+import enchantments from "./enchantments.route";
+import entities from "./entities.route";
+import foods from "./foods.route";
+import instruments from "./instruments.route";
+import items from "./items.route";
+import materials from "./materials.route";
+import particles from "./particles.route";
+import recipes from "./recipes.route";
+import sounds from "./sounds.route";
+import tints from "./tints.route";
+import language from "./language.route";
+import protocol from "./protocol.route";
+import indexController from "../../../../controllers/Minecraft/versions/1.21.4/index.controller";
+
+const index = Router();
+
+index.get("/", indexController.getRoutes);
+index.use("/attributes", attributes);
+index.use("/biomes", biomes);
+index.use("/blockColissionShapes", blockColissionShapes);
+index.use("/blocks", blocks);
+index.use("/effects", effects);
+index.use("/enchantments", enchantments);
+index.use("/entities", entities);
+index.use("/foods", foods);
+index.use("/instruments", instruments);
+index.use("/items", items);
+index.use("/materials", materials);
+index.use("/particles", particles);
+index.use("/recipes", recipes);
+index.use("/sounds", sounds);
+index.use("/tints", tints);
+index.use("/language", language);
+index.use("/protocol", protocol);
+
+export default index;
