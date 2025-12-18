@@ -3,20 +3,14 @@ on:
   push:
     branches: [main]
 
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
-
 jobs:
   run-api:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: "20"
           cache: "npm"
@@ -24,10 +18,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Compile TypeScript (pre-check)
-        run: npx tsc --noEmit
-
-      - name: Run API with ts-node
-        run: npx ts-node src/index.ts
+      - name: Run API (dev mode)
+        run: npm run dev
         env:
           NODE_ENV: development
