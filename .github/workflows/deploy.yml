@@ -1,4 +1,3 @@
-
 on:
   workflow_dispatch:
   push:
@@ -24,14 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: backend
 
       - name: Compile TypeScript (pre-check)
         run: npx tsc --noEmit
-        working-directory: backend
 
       - name: Run API with ts-node
         run: npx ts-node src/index.ts
-        working-directory: backend
         env:
           NODE_ENV: development
