@@ -1,17 +1,15 @@
 import { Router } from "express";
-import indice from "../controllers/index.controller";
-import tools from "./Minecraft/tools/index.route";
+import tools from "./Minecraft/tools.route";
 import PapersPlease from "./Papers Please/index.route";
 import MinecraftAPI from "./Minecraft/index.route";
 import TerminatorSalvation from "./TerminatorSalvation/index.route"
 import TheElderScrollsVSkyrim from "./TheElderScrollsVSkyrim/index.route";
 import PortalAPI from "./Portal/index.route";
 import UndertaleAPI from "./Undertale/index.route";
-import fnaf1 from "./fnaf1/index.route";
+import fnaf1 from "./Fnaf/index.route";
 
 const index = Router();
 
-index.get("/", indice.info);
 index.use("/api/tools", tools);
 index.use("/api/papersplease", PapersPlease);
 index.use("/api/minecraft", MinecraftAPI);

@@ -32,7 +32,7 @@ class recordController {
       const languages = await recordRepositories.getAvalibleLanguages();
       return res.json(languages);
     } catch (error) {
-      console.error("Error in getByPlace controller:", error);
+      logger.error(`Error in getByPlace controller: ${error}`);
       res.status(500).json({ error: "Internal Server Error" });
     }
   };
@@ -67,7 +67,7 @@ class recordController {
 
       return res.send(result);
     } catch (error) {
-      console.error("Error in getPlaceByID:", error);
+      logger.error(`Error in getPlaceByID: ${error}`);
       return res.status(500).json({ error: "Internal Server Error" });
     }
   };

@@ -79,7 +79,7 @@ export class FinalesController {
 
       res.json(resultados);
     } catch (err) {
-      console.error(err);
+      logger.error(err);
       res.status(500).json({ error: "Error al filtrar finales." });
     }
   }

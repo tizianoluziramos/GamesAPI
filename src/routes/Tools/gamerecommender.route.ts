@@ -1,8 +1,8 @@
 import { Router } from "express";
-import gamerecommender from "../controllers/gamerecommender.controller";
+import gamerecommender from "../../controllers/tools/gamerecommender/gamerecommender.controller";
 
-const router = Router();
+const gamerecommenderRouter = Router();
 
-router.get("/", gamerecommender.recommend);
+gamerecommenderRouter.get("/", gamerecommender.recommend);
 
-export default router;
+export default gamerecommenderRouter;

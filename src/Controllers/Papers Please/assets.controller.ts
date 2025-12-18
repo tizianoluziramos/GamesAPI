@@ -1,4 +1,4 @@
-import { Request, Response, RequestHandler } from "express";
+import { Request, Response, RequestHandler, ErrorRequestHandler } from "express";
 import assetsRepositories from "../../repositories/Papers Please/assets.repository";
 
 export default class assetsController {
@@ -36,7 +36,7 @@ export default class assetsController {
 
       res.json(result);
     } catch (error) {
-      console.error("Error while getting data:", error);
+      logger.error(`Error while getting data: ${error}`);
       res.status(500).json({ error: "Internal server error" });
     }
   };

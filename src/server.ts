@@ -1,11 +1,8 @@
-import path from "path";
-import dotenv from "dotenv";
+import './utils/Logger';
+require("@dotenvx/dotenvx").config();
 import app from "./app";
-
-dotenv.config({ path: path.join(__dirname, ".env") });
-
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, async () => {
-  console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
+  logger.info(`Server is running on port ${PORT}`);
 });

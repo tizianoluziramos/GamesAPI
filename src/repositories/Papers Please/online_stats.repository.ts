@@ -10,7 +10,7 @@ class OnlineStatsRepositories {
       const data: any = await response.json();
       return data.achievementpercentages.achievements;
     } catch (error) {
-      console.error("Error obteniendo logros globales:", error);
+      logger.error(`Error obteniendo logros globales: ${error}`);
       throw error;
     }
   }
@@ -25,7 +25,7 @@ class OnlineStatsRepositories {
 
       return steamData;
     } catch (error) {
-      console.error("Error actualizando OnlineStats.json:", error);
+      logger.error(`Error actualizando OnlineStats.json: ${error}`);
       throw error;
     }
   }

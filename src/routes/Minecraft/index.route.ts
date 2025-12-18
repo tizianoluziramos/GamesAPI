@@ -1,8 +1,7 @@
-// minecraft.route.ts
 import { Router } from "express";
 
 import versions from "./versions/versions.route";
-import tools from "./tools/index.route";
+import tools from "./tools.route";
 
 const Minecraft = Router();
 

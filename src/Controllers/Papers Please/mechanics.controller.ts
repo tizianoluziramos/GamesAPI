@@ -114,7 +114,7 @@ class MecanicasController {
 
       return res.json(mecanicas);
     } catch (error) {
-      console.error(error);
+      logger.error(error);
       return res.status(500).json({ message: "Error interno del servidor" });
     }
   };
@@ -170,7 +170,7 @@ class MecanicasController {
       const documentos = await mecanicasRepositories.getDocumentos(lang);
       return res.json(documentos);
     } catch (error) {
-      console.error(error);
+      logger.error(error);
       return res.status(500).json({ message: "Error interno del servidor" });
     }
   };

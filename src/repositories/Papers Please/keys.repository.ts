@@ -30,7 +30,7 @@ class CdkeysRepositories {
       await page.goto(url, { waitUntil: "domcontentloaded", timeout: 10000 });
       return page.url();
     } catch (err) {
-      console.error("Error resolving redirect:", err);
+      logger.error(`Error resolving redirect: ${err}`);
       return null;
     } finally {
       await page.close();
@@ -89,7 +89,7 @@ class CdkeysRepositories {
 
       return sellers;
     } catch (error) {
-      console.error("Error scraping with Puppeteer:", error);
+      logger.error(`Error scraping with Puppeteer: ${error}`);
       this.cache[url] = null;
       return null;
     }

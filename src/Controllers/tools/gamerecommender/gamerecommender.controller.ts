@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import GameRecommenderRepository from "../repositories/gamerecommender.repository";
-import { Game } from "../models/gamerecommender.model";
+import GameRecommenderRepository from "../../../repositories/Tools/gamerecommender.repository";
+import { Game } from "../../../models/Tools/gamerecommender.model";
 
 type ValidatedGame = Game & {
   id: number;
@@ -54,7 +54,7 @@ class GameRecommenderController {
     const ip = req.headers["x-forwarded-for"] || req.ip;
     const normalizedIp = Array.isArray(ip) ? ip[0] : ip;
     const displayIp = normalizedIp === "::1" ? "127.0.0.1" : normalizedIp;
-    console.log("\x1b[32m[DEBUG]\x1b[0m " + "\x1b[33m" + req.method + "\x1b[0m " + "\x1b[36m/api/tools/gamerecommender\x1b[0m" + (favoriteTitles.length ? "?" + "\x1b[35m" + favoriteTitles.map((t) => `favoriteGames=${encodeURIComponent(t)}`).join("&") + "\x1b[0m" : "") + " " + "\x1b[90m" + JSON.stringify(favoriteTitles) + "\x1b[0m " + "\x1b[34m[IP:" + displayIp + "]\x1b[0m");
+    logger.info("\x1b[32m[DEBUG]\x1b[0m " + "\x1b[33m" + req.method + "\x1b[0m " + "\x1b[36m/api/tools/gamerecommender\x1b[0m" + (favoriteTitles.length ? "?" + "\x1b[35m" + favoriteTitles.map((t) => `favoriteGames=${encodeURIComponent(t)}`).join("&") + "\x1b[0m" : "") + " " + "\x1b[90m" + JSON.stringify(favoriteTitles) + "\x1b[0m " + "\x1b[34m[IP:" + displayIp + "]\x1b[0m");
   }
 
   public async recommend(req: Request, res: Response) {
@@ -363,7 +363,7 @@ class GameRecommenderController {
             }
           } catch (e) {
             // If ANN call fails, fallback to brute force
-            console.warn("ANN search failed, falling back to brute force:", e);
+            logger.warn(`ANN search failed, falling back to brute force: ${e}`);
           }
         }
 
@@ -539,7 +539,7 @@ class GameRecommenderController {
       // Note: in production, strip sensitive diagnostics or gate behind an admin flag.
       return res.json({ recommendation: bestGame, diagnostics });
     } catch (err) {
-      console.error("💥 Error en recommend ultra-advanced:", err);
+      logger.error(`💥 Error en recommend ultra-advanced: ${err}`);
       return res.status(500).json({ error: "Internal Server Error", details: (err as Error).message });
     }
   }

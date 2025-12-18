@@ -25,7 +25,7 @@ class OnlineStatsController {
         res.status(200).json(data);
       }
     } catch (error) {
-      console.error("Error en controlador:", error);
+      logger.error(`Error en controlador: ${error}`);
       res.status(500).json({ error: "Error al actualizar o leer datos" });
     }
   }

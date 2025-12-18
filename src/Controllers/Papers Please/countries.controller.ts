@@ -25,7 +25,7 @@ class PaisesController {
       const paises = await paisesRepository.getAll();
       return res.json(paises);
     } catch (error) {
-      console.error("Error en getFiltered:", error);
+      logger.error(`Error en getFiltered: ${error}`);
       return res.status(500).json({ message: "Error interno del servidor" });
     }
   };
@@ -38,7 +38,7 @@ class PaisesController {
       const paises = await paisesRepository.getAll();
       return res.json(paises);
     } catch (error) {
-      console.error("Error en getAll:", error);
+      logger.error(`Error en getAll: ${error}`);
       return res.status(500).json({ message: "Error interno del servidor" });
     }
   };
@@ -54,7 +54,7 @@ class PaisesController {
       }
       return res.json(pais);
     } catch (error) {
-      console.error("Error en getByNombre:", error);
+      logger.error(`Error en getByNombre: ${error}`);
       return res.status(500).json({ message: "Error interno del servidor" });
     }
   };
@@ -68,7 +68,7 @@ class PaisesController {
       const paises = await paisesRepository.filterByCiudad(city);
       return res.json(paises);
     } catch (error) {
-      console.error("Error en filterByCiudad:", error);
+      logger.error(`Error en filterByCiudad: ${error}`);
       return res.status(500).json({ message: "Error interno del servidor" });
     }
   };
