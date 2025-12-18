@@ -1,4 +1,4 @@
-import puppeteer, { Browser } from "puppeteer";
+import axios from "axios";
 
 export interface ISeller {
   name: string | null;
@@ -14,82 +14,56 @@ export interface ISeller {
 class CdkeysRepositories {
   private cache: Record<string, ISeller[] | null> = {};
 
-  async getFinalRedirectUrl(url: string, browser: Browser): Promise<string | null> {
-    const page = await browser.newPage();
+  async getFinalRedirectUrl(url: string): Promise<string | null> {
     try {
-      await page.setRequestInterception(true);
-      page.on("request", (request) => {
-        const resourceType = request.resourceType();
-        if (["image", "stylesheet", "font", "media"].includes(resourceType)) {
-          request.abort();
-        } else {
-          request.continue();
-        }
-      });
-
-      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 10000 });
-      return page.url();
+      const response = await axios.head(url, { maxRedirects: 5 });
+      return response.request.res.responseUrl || url;
     } catch (err) {
       logger.error(`Error resolving redirect: ${err}`);
       return null;
-    } finally {
-      await page.close();
     }
   }
 
-  async getSellersWithBrowser(url: string): Promise<ISeller[] | null> {
-    if (this.cache[url]) {
-      return this.cache[url];
-    }
+  private extractText(html: string, regex: RegExp): string | null {
+    const match = html.match(regex);
+    if (!match) return null;
+    return match[1].trim();
+  }
+
+  async getSellers(url: string): Promise<ISeller[] | null> {
+    if (this.cache[url]) return this.cache[url];
+
     try {
-      const browser = await puppeteer.launch({ headless: true });
-      const page = await browser.newPage();
+      const { data: html } = await axios.get(url, { headers: { "User-Agent": "Mozilla/5.0" } });
 
-      await page.goto(url, { waitUntil: "networkidle0", timeout: 0 });
+      // Encontrar todos los bloques de vendedores
+      const sellerBlocks = html.match(/<div class="seller-container"[\s\S]*?<\/div>\s*<\/div>/g) || [];
 
-      const sellers: ISeller[] = await page.evaluate(() => {
-        return Array.from(document.querySelectorAll(".seller-container")).map((el) => {
-          const name = el.querySelector(".seller-logo img")?.getAttribute("alt")?.trim() || null;
-          const priceOld = el.querySelector(".oldprice .seller-price")?.textContent?.trim() || null;
-          const priceNew = el.querySelector(".newprice .seller-price")?.textContent?.trim() || null;
-          const currency = el.querySelector(".seller-currency-symbol")?.textContent?.trim() || null;
-          const href = el.querySelector(".btn-seller")?.getAttribute("href") || null;
+      const sellers: ISeller[] = await Promise.all(
+        sellerBlocks.map(async (block: string) => {
+          const name = this.extractText(block, /<img[^>]+alt="([^"]+)"/);
+          const priceOld = this.extractText(block, /<div class="oldprice [^"]*">\s*<span class="seller-price">([^<]+)<\/span>/);
+          const priceNew = this.extractText(block, /<div class="newprice [^"]*">\s*<span class="seller-price">([^<]+)<\/span>/);
+          const currency = this.extractText(block, /<span class="seller-currency-symbol">([^<]+)<\/span>/);
+          const href = this.extractText(block, /<a[^>]+class="btn-seller"[^>]+href="([^"]+)"/);
           const link = href ? `https://www.cdkeysforgames.com${href}` : null;
-          const region = el.querySelector(".seller-region span.seller-subregion span")?.textContent?.trim() || null;
-          const version = el.querySelector(".seller-version")?.textContent?.trim() || null;
-          const discount = el.querySelector(".price-coupon")?.textContent?.trim() || null;
+          const region = this.extractText(block, /<span class="seller-subregion">([^<]+)<\/span>/);
+          const version = this.extractText(block, /<div class="seller-version">([^<]+)<\/div>/);
+          const discount = this.extractText(block, /<div class="price-coupon">([^<]+)<\/div>/);
 
-          return {
-            name,
-            priceOld,
-            priceNew,
-            currency,
-            link,
-            region,
-            version,
-            discount,
-          };
-        });
-      });
-
-      await Promise.all(
-        sellers.map(async (seller) => {
-          if (seller.link) {
-            const redirected = await this.getFinalRedirectUrl(seller.link!, browser);
-            if (redirected) {
-              seller.link = redirected;
-            }
+          if (link) {
+            const redirected = await this.getFinalRedirectUrl(link);
+            if (redirected) return { name, priceOld, priceNew, currency, link: redirected, region, version, discount };
           }
+
+          return { name, priceOld, priceNew, currency, link, region, version, discount };
         })
       );
 
-      await browser.close();
-
       this.cache[url] = sellers;
-
       return sellers;
-    } catch (error) {
-      logger.error(`Error scraping with Puppeteer: ${error}`);
+    } catch (err) {
+      logger.error(`Error scraping with Axios: ${err}`);
       this.cache[url] = null;
       return null;
     }

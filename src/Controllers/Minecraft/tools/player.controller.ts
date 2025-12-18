@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import axios from "axios";
 
-class UuidController {
+class player {
   public async getInfo(req: Request, res: Response): Promise<void> {
     let { id } = req.params;
 
@@ -35,4 +35,4 @@ class UuidController {
   }
 }
 
-export default new UuidController();
+export default new player();

@@ -1,22 +1,22 @@
 import { Router } from "express";
-import tools from "./Minecraft/tools.route";
-import PapersPlease from "./Papers Please/index.route";
-import MinecraftAPI from "./Minecraft/index.route";
-import TerminatorSalvation from "./TerminatorSalvation/index.route"
-import TheElderScrollsVSkyrim from "./TheElderScrollsVSkyrim/index.route";
-import PortalAPI from "./Portal/index.route";
-import UndertaleAPI from "./Undertale/index.route";
-import fnaf1 from "./Fnaf/index.route";
+import PapersPlease from "./PapersPlease.route";
+import Minecraft from "./Minecraft.route";
+import TerminatorSalvation from "./TerminatorSalvation.route"
+import TheElderScrollsVSkyrim from "./TheElderScrollsVSkyrim.route";
+import PortalAPI from "./Portal.route";
+import Undertale from "./Undertale.route";
+import Fnaf from "./Fnaf.route";
+import Tools from "./Tools.route";
 
 const index = Router();
 
-index.use("/api/tools", tools);
 index.use("/api/papersplease", PapersPlease);
-index.use("/api/minecraft", MinecraftAPI);
+index.use("/api/minecraft", Minecraft);
 index.use("/api/terminatorsalvation", TerminatorSalvation);
 index.use("/api/theelderscrollsvskyrim", TheElderScrollsVSkyrim);
 index.use("/api/portal", PortalAPI);
-index.use("/api/undertale", UndertaleAPI);
-index.use("/api/fnaf", fnaf1);
+index.use("/api/undertale", Undertale);
+index.use("/api/fnaf", Fnaf);
+index.use("/api/tools", Tools);
 
 export default index;

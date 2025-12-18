@@ -1,7 +1,7 @@
 import { Request, Response, RequestHandler } from "express";
 import paisesRepository from "../../repositories/Papers Please/countries.repository";
 
-class PaisesController {
+class CountriesController {
   public static getFiltered: RequestHandler | any = async (
     req: Request,
     res: Response
@@ -74,4 +74,4 @@ class PaisesController {
   };
 }
 
-export default PaisesController;
+export default CountriesController;

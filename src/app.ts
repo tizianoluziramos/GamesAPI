@@ -1,5 +1,4 @@
 import express, { Application } from "express";
-import compression from "compression";
 import routes from "./routes/index.route";
 import errorMiddleware from "./middlewares/error.middleware";
 
@@ -16,9 +15,6 @@ class App {
     this.app.disable("x-powered-by");
     this.app.use(errorMiddleware);
     this.app.use(express.json());
-    this.app.use(compression({ 
-      level: 6      
-     }));
   }
 
   private loadRoutes(): void {

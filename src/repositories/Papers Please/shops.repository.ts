@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { ITienda, ITiendas } from "../../models/Papers Please/Shop.model";
 
-class TiendaRepositories {
+class ShopRepositories {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "Tiendas.json");
   private cache?: ITiendas;
 
@@ -43,4 +43,4 @@ class TiendaRepositories {
   }
 }
 
-export default new TiendaRepositories();
+export default new ShopRepositories();

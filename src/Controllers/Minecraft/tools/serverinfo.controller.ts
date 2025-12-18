@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { status } from "minecraft-server-util";
 
-class ServerInfoController {
+class serverinfo {
   async getServerInfo(req: Request, res: Response) {
     const ip = req.params.ip;
     const port = req.params.port ? parseInt(req.params.port) : 25565;
@@ -53,4 +53,4 @@ class ServerInfoController {
   }
 }
 
-export default new ServerInfoController();
+export default new serverinfo();

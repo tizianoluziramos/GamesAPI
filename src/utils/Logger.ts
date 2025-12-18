@@ -1,9 +1,6 @@
 import pino from "pino";
 
 const Logger = pino({
-  transport: {
-    target: 'pino-pretty',
-  },
   level: "info",
 });
 

@@ -1,10 +1,8 @@
-// src/controllers/tiendaController.ts
-
 import { RequestHandler } from "express";
 import tiendaRepositories from "../../repositories/Papers Please/shops.repository";
 import cdKeysRepositories from "../../repositories/Papers Please/keys.repository";
 
-class tiendaController {
+class shopController {
   public static async getData() {
     try {
       const data = await cdKeysRepositories.getSellersWithBrowser("https://www.cdkeysforgames.com/games/steam-games/papers-please/");
@@ -20,7 +18,7 @@ class tiendaController {
   };
 
   public static getBestSellers: RequestHandler = async (req, res) => {
-    res.json(await tiendaController.getData());
+    res.json(await shopController.getData());
   };
 
   public static getById: RequestHandler = async (req, res) => {
@@ -34,4 +32,4 @@ class tiendaController {
   };
 }
 
-export default tiendaController;
+export default shopController;
