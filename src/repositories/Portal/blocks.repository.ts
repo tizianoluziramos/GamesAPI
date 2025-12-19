@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Block } from "../../models/Portal/Blocks.model";
+import { Block } from "models/Portal/Blocks.model";
 
 class blocks {
     private dataPath: string = path.join(__dirname, "..", "..", "data", "Portal", "blocks.json")

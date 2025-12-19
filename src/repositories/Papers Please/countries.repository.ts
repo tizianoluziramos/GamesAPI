@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { iCountry, iCountryData } from "../../models/Papers Please/Countries.model";
+import { iCountry, iCountryData } from "models/Papers Please/Countries.model";
 
 class CountriesRepository {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "Paises.json");

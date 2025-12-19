@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { ILore, ILoreSection } from "../../models/Papers Please/Lore.model";
+import { ILore, ILoreSection } from "models/Papers Please/Lore.model";
 
 class LoreRepository {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "Lore.json");

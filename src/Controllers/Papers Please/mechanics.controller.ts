@@ -1,5 +1,5 @@
 import { Request, Response, RequestHandler } from "express";
-import mecanicasRepositories from "../../repositories/Papers Please/mechanics.repository";
+import mecanicasRepositories from "repositories/Papers Please/mechanics.repository";
 
 class MecanicasController {
   private static getLanguage(req: Request): string {

@@ -1,8 +1,8 @@
 import { Router } from "express";
 
-import charactersController from "../controllers/Fnaf/characters.controller";
-import gameinfoController from "../controllers/Fnaf/gameinfo.controller";
-import locationsController from "../controllers/Fnaf/locations.controller";
+import charactersController from "controllers/Fnaf/characters.controller";
+import gameinfoController from "controllers/Fnaf/gameinfo.controller";
+import locationsController from "controllers/Fnaf/locations.controller";
 
 const fnaf = Router();
 

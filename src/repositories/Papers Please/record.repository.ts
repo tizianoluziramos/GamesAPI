@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { RunEntry, SpeedrunLeaderboardResponse } from "../../models/Papers Please/Record.model";
+import { RunEntry, SpeedrunLeaderboardResponse } from "models/Papers Please/Record.model";
 
 class WorldRecordRepository {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "WorldRecord.json");

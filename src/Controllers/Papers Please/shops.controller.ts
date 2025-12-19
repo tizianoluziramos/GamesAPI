@@ -1,11 +1,11 @@
 import { RequestHandler } from "express";
-import tiendaRepositories from "../../repositories/Papers Please/shops.repository";
-import cdKeysRepositories from "../../repositories/Papers Please/keys.repository";
+import tiendaRepositories from "repositories/Papers Please/shops.repository";
+import cdKeysRepositories from "repositories/Papers Please/keys.repository";
 
 class shopController {
   public static async getData() {
     try {
-      const data = await cdKeysRepositories.getSellersWithBrowser("https://www.cdkeysforgames.com/games/steam-games/papers-please/");
+      const data = await cdKeysRepositories.getSellers("https://www.cdkeysforgames.com/games/steam-games/papers-please/");
       return data;
     } catch {}
   }

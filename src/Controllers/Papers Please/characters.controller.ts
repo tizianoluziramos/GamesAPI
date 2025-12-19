@@ -1,5 +1,5 @@
 import { Request, Response, RequestHandler } from "express";
-import personajesRepositories from "../../repositories/Papers Please/characters.repository";
+import personajesRepositories from "repositories/Papers Please/characters.repository";
 
 export default class personajesController {
   public static getFiltered: RequestHandler | any = async (req: Request, res: Response) => {

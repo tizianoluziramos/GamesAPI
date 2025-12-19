@@ -1,17 +1,17 @@
 import { Router } from "express";
 
 // --- Controllers ---
-import assetsController from "../controllers/Papers Please/assets.controller";
-import charactersController from "../controllers/Papers Please/characters.controller";
-import CountriesController from "../controllers/Papers Please/countries.controller";
-import creditsController from "../controllers/Papers Please/credits.controller";
-import { FinalesController } from "../controllers/Papers Please/endings.controller";
-import LoreController from "../controllers/Papers Please/lore.controller";
-import MecanicasController from "../controllers/Papers Please/mechanics.controller";
-import onlineStatsController from "../controllers/Papers Please/online_stats.controller";
-import recordController from "../controllers/Papers Please/record.controller";
-import theMovieController from "../controllers/Papers Please/TheMovie.controller";
-import shopController from "../controllers/Papers Please/shops.controller";
+import assetsController from "controllers/Papers Please/assets.controller";
+import charactersController from "controllers/Papers Please/characters.controller";
+import CountriesController from "controllers/Papers Please/countries.controller";
+import creditsController from "controllers/Papers Please/credits.controller";
+import { FinalesController } from "controllers/Papers Please/endings.controller";
+import LoreController from "controllers/Papers Please/lore.controller";
+import MecanicasController from "controllers/Papers Please/mechanics.controller";
+import onlineStatsController from "controllers/Papers Please/online_stats.controller";
+import recordController from "controllers/Papers Please/record.controller";
+import theMovieController from "controllers/Papers Please/TheMovie.controller";
+import shopController from "controllers/Papers Please/shops.controller";
 
 const PapersPlease = Router();
 

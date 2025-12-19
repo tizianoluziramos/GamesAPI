@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Quests } from "../../models/TheElderScrollsVSkyrim/quests.model";
+import { Quests } from "models/TheElderScrollsVSkyrim/quests.model";
 
 class quests {
   private cache?: Quests[];

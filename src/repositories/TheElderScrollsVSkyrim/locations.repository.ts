@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { ILocations, Location } from "../../models/TheElderScrollsVSkyrim/locations.model";
+import { ILocations, Location } from "models/TheElderScrollsVSkyrim/locations.model";
 
 class locations {
   private dataPath = path.join(__dirname, "..", "..", "data", "TheElderScrollsVSkyrim", "locations.json");

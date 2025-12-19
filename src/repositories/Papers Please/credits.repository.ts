@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Credits, data } from "../../models/Papers Please/Credits.model";
+import { Credits, data } from "models/Papers Please/Credits.model";
 
 class CreditsRepository {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "Credits.json");

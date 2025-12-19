@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import spellsRepository from "../../repositories/TheElderScrollsVSkyrim/spells.repository";
-import { School } from "../../models/TheElderScrollsVSkyrim/spells.model";
+import spellsRepository from "repositories/TheElderScrollsVSkyrim/spells.repository";
+import { School } from "models/TheElderScrollsVSkyrim/spells.model";
 
 class spells {
   public async getAll(req: Request, res: Response) {

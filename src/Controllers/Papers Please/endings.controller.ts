@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import FinalesRepository from "../../repositories/Papers Please/endings.repository";
+import FinalesRepository from "repositories/Papers Please/endings.repository";
 
 export class FinalesController {
   private static getLang(req: Request): string {

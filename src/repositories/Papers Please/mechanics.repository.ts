@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 import path from "path";
-import { iMecanicas, IDocumento, IEvento, IPenalizacion, IReglas, ITiempo } from "../../models/Papers Please/Mechanics.model";
+import { iMecanicas, IDocumento, IEvento, IPenalizacion, IReglas, ITiempo } from "models/Papers Please/Mechanics.model";
 
 class MecanicasRepository {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "Mecanicas.json");

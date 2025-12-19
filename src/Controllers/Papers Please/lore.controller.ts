@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import LoreRepository from "../../repositories/Papers Please/lore.repository";
+import LoreRepository from "repositories/Papers Please/lore.repository";
 
 class LoreController {
   public async getAll(req: Request, res: Response): Promise<void> {

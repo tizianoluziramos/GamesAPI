@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import locationsRepository from "../../repositories/TheElderScrollsVSkyrim/locations.repository";
+import locationsRepository from "repositories/TheElderScrollsVSkyrim/locations.repository";
 
 class locations {
   public async getAll(req: Request, res: Response) {

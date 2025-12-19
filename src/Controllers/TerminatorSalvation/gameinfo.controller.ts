@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import gameinfoRepository from "../../repositories/TerminatorSalvation/gameinfo.repository"
+import gameinfoRepository from "repositories/TerminatorSalvation/gameinfo.repository"
 
 class reception {
     public async getAll(req: Request, res: Response) {

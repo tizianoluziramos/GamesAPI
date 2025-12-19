@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Weapons as IWeapons } from "../../models/TheElderScrollsVSkyrim/weapons.model";
+import { Weapons as IWeapons } from "models/TheElderScrollsVSkyrim/weapons.model";
 
 class weapons {
   private dataPath = path.join(__dirname, "..", "..", "data", "TheElderScrollsVSkyrim", "weapons.json");

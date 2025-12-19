@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import endingsRepository from "../../repositories/Undertale/endings.repository";
+import endingsRepository from "repositories/Undertale/endings.repository";
 
 class endings {
   public async getAll(req: Request, res: Response) {

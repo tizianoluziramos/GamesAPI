@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import RecommenderRepository from "../../repositories/Tools/recommender.repository";
-import { Game } from "../../models/Tools/recommender.model";
+import RecommenderRepository from "repositories/Tools/recommender.repository";
+import { Game } from "models/Tools/recommender.model";
 
 type ValidatedGame = Game & {
   id: number;

@@ -1,7 +1,7 @@
 import { Router } from "express";
-import infoController from "../controllers/Minecraft/info.controller";
-import uuidController from "../controllers/Minecraft/tools/player.controller";
-import statusController from "../controllers/Minecraft/tools/serverinfo.controller";
+import infoController from "controllers/Minecraft/info.controller";
+import uuidController from "controllers/Minecraft/tools/player.controller";
+import statusController from "controllers/Minecraft/tools/serverinfo.controller";
 
 const minecraft = Router();
 

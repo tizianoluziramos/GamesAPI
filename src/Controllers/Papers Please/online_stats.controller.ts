@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import onlineStatsRepositories from "../../repositories/Papers Please/online_stats.repository";
+import onlineStatsRepositories from "repositories/Papers Please/online_stats.repository";
 
 class OnlineStatsController {
   public async showStores(req: Request, res: Response) {

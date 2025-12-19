@@ -1,4 +1,4 @@
-import { Gameinfo } from "../../models/TerminatorSalvation/gameinfo.model";
+import { Gameinfo } from "models/TerminatorSalvation/gameinfo.model";
 import fs from "fs/promises";
 import path from "path";
 

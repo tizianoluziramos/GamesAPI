@@ -1,6 +1,6 @@
 import fs from "fs/promises"
 import path from "path";
-import { Testchambers } from "../../models/Portal/testchambers.model";
+import { Testchambers } from "models/Portal/testchambers.model";
 
 class testchambers {
     private cache?: Testchambers;

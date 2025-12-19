@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import questsRepository from "../../repositories/TheElderScrollsVSkyrim/quests.repository";
+import questsRepository from "repositories/TheElderScrollsVSkyrim/quests.repository";
 
 class quests {
   public async getAll(req: Request, res: Response) {

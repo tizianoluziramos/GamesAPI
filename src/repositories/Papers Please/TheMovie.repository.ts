@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { iTheMovie, FilmDataEnglish, FilmDataSpanish, FilmDataPortuguese } from "../../models/Papers Please/TheMovie.model";
+import { iTheMovie, FilmDataEnglish, FilmDataSpanish, FilmDataPortuguese } from "models/Papers Please/TheMovie.model";
 
 class TheMovieRepositories {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "TheMovie.json");

@@ -1,12 +1,12 @@
 import { Router } from "express";
 
-import indexController from "../controllers/TheElderScrollsVSkyrim/index.controller";
-import booksController from "../controllers/TheElderScrollsVSkyrim/books.controller";
-import charactersController from "../controllers/TheElderScrollsVSkyrim/characters.controller";
-import locationsController from "../controllers/TheElderScrollsVSkyrim/locations.controller";
-import questsController from "../controllers/TheElderScrollsVSkyrim/quests.controller";
-import spellsController from "../controllers/TheElderScrollsVSkyrim/spells.controller";
-import weaponsController from "../controllers/TheElderScrollsVSkyrim/weapons.controller";
+import indexController from "controllers/TheElderScrollsVSkyrim/index.controller";
+import booksController from "controllers/TheElderScrollsVSkyrim/books.controller";
+import charactersController from "controllers/TheElderScrollsVSkyrim/characters.controller";
+import locationsController from "controllers/TheElderScrollsVSkyrim/locations.controller";
+import questsController from "controllers/TheElderScrollsVSkyrim/quests.controller";
+import spellsController from "controllers/TheElderScrollsVSkyrim/spells.controller";
+import weaponsController from "controllers/TheElderScrollsVSkyrim/weapons.controller";
 
 const skyrimRouter = Router();
 

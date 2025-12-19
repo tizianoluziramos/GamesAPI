@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Gameinfo } from "../../models/Fnaf/gameinfo.model";
+import { Gameinfo } from "models/Fnaf/gameinfo.model";
 
 class GameinfoRepository {
   private cache?: Gameinfo;

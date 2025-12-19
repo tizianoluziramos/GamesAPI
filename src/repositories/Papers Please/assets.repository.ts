@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { IAssets, Soundeffect } from "../../models/Papers Please/Assets.model";
+import { IAssets, Soundeffect } from "models/Papers Please/Assets.model";
 
 class assetsRepositories {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "assets.json");

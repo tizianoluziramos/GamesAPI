@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Walkthrough, Link } from "../../models/Portal/walkthrough.model";
+import { Walkthrough, Link } from "models/Portal/walkthrough.model";
 
 class walkthrough {
   private cache?: Walkthrough;

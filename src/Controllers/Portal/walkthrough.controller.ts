@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import walkthroughRepository from "../../repositories/Portal/walkthrough.repository";
+import walkthroughRepository from "repositories/Portal/walkthrough.repository";
 
 class walkthrough {
   public async getAll(req: Request, res: Response) {

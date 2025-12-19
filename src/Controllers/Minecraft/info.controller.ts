@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import infoRepository from "../../repositories/Minecraft/info.repository";
+import infoRepository from "repositories/Minecraft/info.repository";
 
 class info {
   public async getFile(req: Request, res: Response) {

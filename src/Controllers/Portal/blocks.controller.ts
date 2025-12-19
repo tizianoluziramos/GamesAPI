@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import blocksRepository from "../../repositories/Portal/blocks.repository";
+import blocksRepository from "repositories/Portal/blocks.repository";
 
 class blocks {
     public async getAll(req: Request, res: Response) {

@@ -1,10 +1,10 @@
 import { Router } from "express";
 
-import indexController from "../controllers/Undertale/index.controller";
-import charactersController from "../controllers/Undertale/characters.controller";
-import locationsController from "../controllers/Undertale/locations.controller";
-import itemsController from "../controllers/Undertale/items.controller";
-import endingsController from "../controllers/Undertale/endings.controller";
+import indexController from "controllers/Undertale/index.controller";
+import charactersController from "controllers/Undertale/characters.controller";
+import locationsController from "controllers/Undertale/locations.controller";
+import itemsController from "controllers/Undertale/items.controller";
+import endingsController from "controllers/Undertale/endings.controller";
 
 const undertale = Router();
 

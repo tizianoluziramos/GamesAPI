@@ -1,5 +1,5 @@
 import { Request, Response, RequestHandler } from "express";
-import paisesRepository from "../../repositories/Papers Please/countries.repository";
+import paisesRepository from "repositories/Papers Please/countries.repository";
 
 class CountriesController {
   public static getFiltered: RequestHandler | any = async (

@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import charactersRepository from "../../repositories/TerminatorSalvation/characters.repository"
+import charactersRepository from "repositories/TerminatorSalvation/characters.repository"
 
 class characters {
     public async getAll(req: Request, res: Response) {

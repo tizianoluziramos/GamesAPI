@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Characters } from "../../models/TheElderScrollsVSkyrim/characters.model";
+import { Characters } from "models/TheElderScrollsVSkyrim/characters.model";
 
 class characters {
   private dataPath = path.join(__dirname, "..", "..", "data", "TheElderScrollsVSkyrim", "characters.json");

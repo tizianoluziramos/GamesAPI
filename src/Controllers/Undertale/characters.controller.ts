@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import charactersRepository from "../../repositories/Undertale/characters.repository";
+import charactersRepository from "repositories/Undertale/characters.repository";
 
 class characters {
   public async getAll(req: Request, res: Response) {

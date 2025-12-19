@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { iFinal } from "../../models/Papers Please/Endings.model";
+import { iFinal } from "models/Papers Please/Endings.model";
 
 class FinalesRepository {
   private dataPath = path.join(__dirname, "..", "..", "data", "Papers Please", "Finales.json");

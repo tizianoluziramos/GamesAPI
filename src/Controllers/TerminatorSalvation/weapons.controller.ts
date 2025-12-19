@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import weaponsRepository from "../../repositories/TerminatorSalvation/weapons.repository"
+import weaponsRepository from "repositories/TerminatorSalvation/weapons.repository"
 
 class weapons {
     public async getAll(req: Request, res: Response) {

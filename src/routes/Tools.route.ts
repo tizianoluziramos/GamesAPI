@@ -1,5 +1,5 @@
 import { Router } from "express";
-import Recommender from "../controllers/tools/recommender.controller";
+import Recommender from "controllers/tools/recommender.controller";
 
 const Tools = Router();
 

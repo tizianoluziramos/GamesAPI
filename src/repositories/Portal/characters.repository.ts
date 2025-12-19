@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Character } from "../../models/Portal/Characters.model";
+import { Character } from "models/Portal/Characters.model";
 
 class characters {
     private dataPath: string = path.join(__dirname, "..", "..", "data", "Portal", "characters.json");

@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Locations } from "../../models/Fnaf/locations.model";
+import { Locations } from "models/Fnaf/locations.model";
 
 class LocationsRepository {
   private cache?: Locations[];

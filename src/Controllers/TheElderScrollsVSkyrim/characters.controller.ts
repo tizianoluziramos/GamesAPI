@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import charactersRepository from "../../repositories/TheElderScrollsVSkyrim/characters.repository";
+import charactersRepository from "repositories/TheElderScrollsVSkyrim/characters.repository";
 
 class characters {
   public async getAll(req: Request, res: Response) {

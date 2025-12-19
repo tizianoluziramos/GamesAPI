@@ -1,5 +1,5 @@
 import { Request, Response, RequestHandler } from "express";
-import creditsRepositories from "../../repositories/Papers Please/credits.repository";
+import creditsRepositories from "repositories/Papers Please/credits.repository";
 
 class creditsController {
   public getFiltered: RequestHandler = async (req: Request, res: Response) => {

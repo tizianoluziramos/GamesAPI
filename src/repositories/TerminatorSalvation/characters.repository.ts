@@ -1,5 +1,5 @@
 import * as fs from "fs/promises";
-import { characters as ICharacters } from "../../models/TerminatorSalvation/characters.model";
+import { characters as ICharacters } from "models/TerminatorSalvation/characters.model";
 import path from "path";
 
 class characters {

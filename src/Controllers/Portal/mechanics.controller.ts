@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import Mechanics from "../../repositories/Portal/mechanics.repository";
+import Mechanics from "repositories/Portal/mechanics.repository";
 
 class mechanics {
     public async getAll(req: Request, res: Response) {

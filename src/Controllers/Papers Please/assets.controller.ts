@@ -1,5 +1,5 @@
 import { Request, Response, RequestHandler, ErrorRequestHandler } from "express";
-import assetsRepositories from "../../repositories/Papers Please/assets.repository";
+import assetsRepositories from "repositories/Papers Please/assets.repository";
 
 export default class assetsController {
   public static getAll: RequestHandler | any = async (

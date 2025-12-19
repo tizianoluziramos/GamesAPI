@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import Gameinfo from "../../repositories/Portal/gameinfo.repository";
+import Gameinfo from "repositories/Portal/gameinfo.repository";
 
 class GameinfoController {
   public async getAll(req: Request, res: Response) {

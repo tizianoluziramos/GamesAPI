@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import gameinfoRepository from "../../repositories/Fnaf/gameinfo.repository";
+import gameinfoRepository from "repositories/Fnaf/gameinfo.repository";
 
 class gameinfo {
   public async getAll(req: Request, res: Response) {

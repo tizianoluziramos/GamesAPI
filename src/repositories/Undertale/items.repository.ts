@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { Items } from "../../models/Undertale/items.model";
+import { Items } from "models/Undertale/items.model";
 
 class items {
   private cache?: Items;

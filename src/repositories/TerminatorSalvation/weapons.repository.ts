@@ -1,4 +1,4 @@
-import { weapons as IWeapons } from "../../models/TerminatorSalvation/weapons.model";
+import { weapons as IWeapons } from "models/TerminatorSalvation/weapons.model";
 import fs from "fs/promises";
 import path from "path";
 

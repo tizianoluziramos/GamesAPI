@@ -1,5 +1,5 @@
 import { Request, Response, RequestHandler } from "express";
-import TheMovieRepositories from "../../repositories/Papers Please/TheMovie.repository";
+import TheMovieRepositories from "repositories/Papers Please/TheMovie.repository";
 
 class TheMovieController {
   public getAll: RequestHandler = async (req: Request, res: Response) => {

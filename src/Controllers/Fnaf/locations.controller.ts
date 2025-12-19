@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import locationsRepository from "../../repositories/Fnaf/locations.repository";
+import locationsRepository from "repositories/Fnaf/locations.repository";
 
 class locations {
   public async getAll(req: Request, res: Response) {

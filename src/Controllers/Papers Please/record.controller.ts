@@ -1,5 +1,5 @@
 import { Request, Response, RequestHandler } from "express";
-import recordRepositories from "../../repositories/Papers Please/record.repository";
+import recordRepositories from "repositories/Papers Please/record.repository";
 
 class recordController {
   public static getAll: RequestHandler | any = async (

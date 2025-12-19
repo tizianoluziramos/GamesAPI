@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs/promises";
-import { Game } from "../../models/Tools/recommender.model";
+import { Game } from "models/Tools/recommender.model";
 
 class recommender {
   private dataPath: string = path.join(__dirname, "..", "..", "data", "Tools", "gamerecommender.json");

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import weaponsRepository from "../../repositories/TheElderScrollsVSkyrim/weapons.repository";
+import weaponsRepository from "repositories/TheElderScrollsVSkyrim/weapons.repository";
 
 class weapons {
   public async getAll(req: Request, res: Response) {
