@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a82e7e10c60a0ba58bd95b8f9d2ecde73590ea5fe829a5d439ff369805f800c
-size 111
+{
+  "version": 766,
+  "minecraftVersion": "1.20.5",
+  "majorVersion": "1.20",
+  "releaseType": "release"
+}

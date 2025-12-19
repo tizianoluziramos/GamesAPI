@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c155c9f69aaa713c187f7febfaa5d40b8c5e3a6531b2462c435206e64b60fd38
-size 481
+[
+  {
+    "id": 0,
+    "name": "harp"
+  },
+  {
+    "id": 1,
+    "name": "doubleBass"
+  },
+  {
+    "id": 2,
+    "name": "snareDrum"
+  },
+  {
+    "id": 3,
+    "name": "sticks"
+  },
+  {
+    "id": 4,
+    "name": "bassDrum"
+  },
+  {
+    "id": 5,
+    "name": "xylophone"
+  },
+  {
+    "id": 6,
+    "name": "bell"
+  },
+  {
+    "id": 7,
+    "name": "guitar"
+  },
+  {
+    "id": 8,
+    "name": "chime"
+  },
+  {
+    "id": 9,
+    "name": "flute"
+  }
+]

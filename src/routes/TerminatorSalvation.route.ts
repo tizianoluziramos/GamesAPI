@@ -3,11 +3,8 @@ import { Router } from "express";
 import charactersController from "controllers/TerminatorSalvation/characters.controller";
 import gameinfoController from "controllers/TerminatorSalvation/gameinfo.controller";
 import weaponsController from "controllers/TerminatorSalvation/weapons.controller";
-import indexController from "controllers/TerminatorSalvation/index.controller";
 
 const TerminatorSalvation = Router();
-
-TerminatorSalvation.get("/", indexController.getRoutes);
 
 TerminatorSalvation.get("/characters", charactersController.getAll);
 TerminatorSalvation.get("/characters/id/:id", charactersController.getById);

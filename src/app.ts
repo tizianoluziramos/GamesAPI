@@ -1,4 +1,7 @@
+import 'config/Logger';
+import 'config/envLoader';
 import express, { Application } from "express";
+import serverless from "serverless-http";
 import routes from "./routes/index.route";
 import errorMiddleware from "./middlewares/error.middleware";
 
@@ -22,4 +25,5 @@ class App {
   }
 }
 
-export default new App().app;
+export const appInstance = new App().app;
+export const handler = serverless(appInstance);

@@ -1,6 +1,5 @@
 import { Router } from "express";
 
-import { index } from "controllers/Portal/index.controller";
 import blocksController from "controllers/Portal/blocks.controller";
 import charactersController from "controllers/Portal/characters.controller";
 import GameinfoController from "controllers/Portal/gameinfo.controller";
@@ -10,8 +9,6 @@ import testchambersController from "controllers/Portal/testchambers.controller";
 import walkthroughController from "controllers/Portal/walkthrough.controller";
 
 const portal = Router();
-
-portal.get("/", index.index);
 
 portal.get("/gameinfo", GameinfoController.getAll);
 portal.get("/gameinfo/platforms", GameinfoController.getPlatforms);

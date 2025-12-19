@@ -11,7 +11,6 @@ import MecanicasController from "controllers/Papers Please/mechanics.controller"
 import onlineStatsController from "controllers/Papers Please/online_stats.controller";
 import recordController from "controllers/Papers Please/record.controller";
 import theMovieController from "controllers/Papers Please/TheMovie.controller";
-import shopController from "controllers/Papers Please/shops.controller";
 
 const PapersPlease = Router();
 
@@ -90,11 +89,6 @@ PapersPlease.get("/worldrecord/:lang", recordController.getAll);
 PapersPlease.get("/worldrecord/:lang/place/", recordController.getAllPlaces);
 PapersPlease.get("/worldrecord/:lang/place/:place", recordController.getByPlace);
 PapersPlease.get("/worldrecord/:lang/id/:id", recordController.getPlaceByID);
-
-PapersPlease.get("/shops/keys", shopController.getBestSellers);
-PapersPlease.get("/shops/", shopController.getAll);
-PapersPlease.get("/shops/id/:id", shopController.getById);
-PapersPlease.get("/shops/name/:name", shopController.getByName);
 
 PapersPlease.get("/movie/", theMovieController.getAll);
 PapersPlease.get("/movie/:lang", theMovieController.getByLanguage);

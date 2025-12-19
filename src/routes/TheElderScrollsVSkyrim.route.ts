@@ -1,6 +1,5 @@
 import { Router } from "express";
 
-import indexController from "controllers/TheElderScrollsVSkyrim/index.controller";
 import booksController from "controllers/TheElderScrollsVSkyrim/books.controller";
 import charactersController from "controllers/TheElderScrollsVSkyrim/characters.controller";
 import locationsController from "controllers/TheElderScrollsVSkyrim/locations.controller";
@@ -9,8 +8,6 @@ import spellsController from "controllers/TheElderScrollsVSkyrim/spells.controll
 import weaponsController from "controllers/TheElderScrollsVSkyrim/weapons.controller";
 
 const skyrimRouter = Router();
-
-skyrimRouter.get("/", indexController.getRoutes);
 
 skyrimRouter.get("/characters", charactersController.getAll);
 skyrimRouter.get("/characters/pageid/:pageid", charactersController.getByPageID);

@@ -1,20 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+
+    "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
     "skipLibCheck": true,
-    "noEmit": false,
-    "pretty": false,
-    "incremental": true,
-    "allowJs": false,
-    "types": ["node"],
-    "sourceMap": false,
-    "removeComments": true,
+
+    "baseUrl": "./src",
     "rootDir": "src",
-    "outDir": "dist",
-    "baseUrl": "./src"    
+
+    "noEmit": true,
+    "incremental": true,
+    "pretty": false,
+
+    "types": ["node"]
   }
 }

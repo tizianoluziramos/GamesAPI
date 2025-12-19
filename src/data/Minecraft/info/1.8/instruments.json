@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f37ac2032f3866de95ac9735aac82440ac514b7703418c46a7071896c9d11c2
-size 247
+[
+  {
+    "id": 0,
+    "name": "harp"
+  },
+  {
+    "id": 1,
+    "name": "doubleBass"
+  },
+  {
+    "id": 2,
+    "name": "snareDrum"
+  },
+  {
+    "id": 3,
+    "name": "sticks"
+  },
+  {
+    "id": 4,
+    "name": "bassDrum"
+  }
+]
